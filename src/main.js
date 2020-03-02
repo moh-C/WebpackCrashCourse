@@ -270,7 +270,7 @@ let displayFeatureInfo = function(pixel) {
       image.src = link;
     } else {
       document.getElementById('quick-details__section-label').innerHTML =
-        'جزئیات باند';
+        'جزئیات قطعه';
       $('.photos_class_controller').hide();
       $('.quick_details_controller').show();
 
