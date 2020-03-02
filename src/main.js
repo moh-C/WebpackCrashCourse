@@ -30,7 +30,7 @@ let myBingMap = new TileLayer({
 // Icons Layer
 let icons_KML = new VectorLayer({
   source: new VectorSource({
-    url: 'data/icons.kml',
+    url: 'dist/data/icons.kml',
     format: new KML({
       extractStyles: false
     })
@@ -38,7 +38,7 @@ let icons_KML = new VectorLayer({
   style: new Style({
     image: new Icon({
       anchor: [0, 0],
-      src: 'data/camera.png'
+      src: 'dist/data/camera.png'
     })
   })
 });
@@ -46,7 +46,7 @@ let icons_KML = new VectorLayer({
 // Icons for another year
 let icon_KML_next_year = new VectorLayer({
   source: new VectorSource({
-    url: 'data/icons2.kml',
+    url: 'dist/data/icons2.kml',
     format: new KML({
       extractStyles: false
     })
@@ -54,7 +54,7 @@ let icon_KML_next_year = new VectorLayer({
   style: new Style({
     image: new Icon({
       anchor: [0, 0],
-      src: 'data/camera.png'
+      src: 'dist/data/camera.png'
     })
   })
 });
@@ -83,7 +83,7 @@ let polygon_text_style = new Style({
 // Polygon and Text alongside each other
 let main_polygon_layer = new VectorLayer({
   source: new VectorSource({
-    url: 'data/myCustomGeo.geojson',
+    url: 'dist/data/myCustomGeo.geojson',
     format: new GeoJSON()
   }),
   style: function(feature) {
