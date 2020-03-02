@@ -12,6 +12,9 @@ import GeoJSON from 'ol/format/GeoJSON.js';
 import KML from 'ol/format/KML.js';
 import OSM from 'ol/source/OSM';
 
+const myJsonFile = require('./data.json');
+const dropdown = require('./dropdown.json');
+
 let raster = new TileLayer({
   source: new OSM()
 });
@@ -237,7 +240,6 @@ info.tooltip({
   trigger: 'manual'
 });
 
-const myJsonFile = require('./data.json');
 
 let displayFeatureInfo = function(pixel) {
   info.css({
@@ -457,7 +459,8 @@ function singlePolySelector(feature) {
   let cString = nameofFeature
     .toString()
     .slice(0, nameofFeature.toString().length - 3);
-  //first_branch.innerHTML = '<option value=' + cString + '>' + cString + '</option>\n';
+  console.log(dropdown, cString);
+  firstBranchDesignerCustom(dropdown, cString);
   second_branch.innerHTML = tempTextSecond;
 
   let tempFeature = main_polygon_layer.getSource().getFeatures();
@@ -778,8 +781,6 @@ $(document).on('change', '#first_branch_selection', function(e) {
   else branchSelector(selectedPoly);
 });
 
-const dropdown = require('./dropdown.json');
-
 function dropdownReset() {
   firstBranchDesigner(dropdown);
   secondBranchDesigner(dropdown);
@@ -811,4 +812,22 @@ function secondBranchDesigner(data) {
     }
   }
   second_branch.innerHTML = finalText;
+}
+
+function firstBranchDesignerCustom(data, title) {
+  let first_branch = document.getElementById('first_branch_selection');
+  let finalText = '<option value="null">انتخاب کنید</option>';
+  for (let sth in data) {
+    let currentString = sth.toString();
+    let tempText = '';
+    if (currentString == title) {
+      tempText =
+      '<option value=' + currentString + ' selected >' + currentString + '</option>\n';
+    } else {
+      tempText =
+      '<option value=' + currentString + '>' + currentString + '</option>\n';
+    }
+    finalText = finalText + tempText;
+  }
+  first_branch.innerHTML = finalText;
 }
