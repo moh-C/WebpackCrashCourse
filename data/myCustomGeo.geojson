@@ -1,0 +1,2995 @@
+{
+   "type":"FeatureCollection",
+   "features":[
+      {
+         "type":"Feature",
+         "id":"R11LIK-01",
+         "properties":{
+            "name":"R11LIK-01",
+            "shenaseBand":"R11LIK",
+            "karbari":"پرواز",
+            "noeRoye":"بتنی",
+            "masahat":"8971",
+            "azmoon_shakhes_nahamvari":"5.33",
+            "azmoon_omq_doroshtbaft":"0.98",
+            "akharin_omq_shiarshodegi":"0.98",
+            "akharin_shakhesh_vaziat":"61.27",
+            "akharin_arzyabi_vaziat":"1398/5/2",
+            "amaliyat_tamir_va_negahdari":"تراش و روکش",
+            "last_serious_repair":"1396/7/2",
+            "noeRosazi":"PCC",
+            "color":"rgb(255,255,55)",
+            "IRI_color":"rgb(138,218,138)",
+            "transparent": "rgba(0,0,0,0)"
+         },
+         "geometry":{
+            "type":"Polygon",
+            "coordinates":[
+               [
+                  [
+                     51.122225,
+                     35.425676
+                  ],
+                  [
+                     51.123701,
+                     35.425231
+                  ],
+                  [
+                     51.123468,
+                     35.424648
+                  ],
+                  [
+                     51.121992,
+                     35.425067
+                  ],
+                  [
+                     51.122225,
+                     35.425676
+                  ]
+               ]
+            ]
+         }
+      },
+      {
+         "type":"Feature",
+         "id":"R11LIK-02",
+         "properties":{
+            "name":"R11LIK-02",
+            "shenaseBand":"R11LIK",
+            "karbari":"پرواز",
+            "noeRoye":"آسفالتی",
+            "masahat":"74315",
+            "azmoon_shakhes_nahamvari":"3.04",
+            "azmoon_omq_doroshtbaft":"9.27",
+            "akharin_omq_shiarshodegi":"9.27",
+            "akharin_shakhesh_vaziat":"81.92",
+            "akharin_arzyabi_vaziat":"1398/5/2",
+            "amaliyat_tamir_va_negahdari":"لکه گیری سطحی",
+            "last_serious_repair":"1396/7/2",
+            "noeRosazi":"AC",
+            "color":"rgb(56,170,56)",
+            "IRI_color":"rgb(56,170,56)",
+            "transparent": "rgba(0,0,0,0)"
+         },
+         "geometry":{
+            "type":"Polygon",
+            "coordinates":[
+               [
+                  [
+                     51.123701,
+                     35.425231
+                  ],
+                  [
+                     51.135360,
+                     35.421979
+                  ],
+                  [
+                     51.135137,
+                     35.421414
+                  ],
+                  [
+                     51.123468,
+                     35.424648
+                  ],
+                  [
+                     51.123701,
+                     35.425231
+                  ]
+               ]
+            ]
+         }
+      },
+      {
+         "type": "Feature",
+         "id": "R11LIK-03",
+         "properties": {
+            "name": "R11LIK-03",
+            "shenaseBand": "R11LIK",
+            "karbari": "پرواز",
+            "noeRoye": "آسفالتی",
+            "masahat": "18775",
+            "azmoon_shakhes_nahamvari": "5.91",
+            "azmoon_omq_doroshtbaft": "2.53",
+            "akharin_omq_shiarshodegi": "2.53",
+            "akharin_shakhesh_vaziat": "54.51",
+            "akharin_arzyabi_vaziat": "1398/5/2",
+            "amaliyat_tamir_va_negahdari": "برچیدن و اجرا",
+            "last_serious_repair": "1396/7/2",
+            "noeRosazi": "AC",
+            "color": "rgb(255,125,25)",
+            "IRI_color": "rgb(255,255,55)",
+            "transparent": "rgba(0,0,0,0)"
+         },
+         "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+               [
+               [
+                  51.13536,
+                  35.421979
+               ],
+               [
+                  51.138404,
+                  35.421133
+               ],
+               [
+                  51.138178,
+                  35.420564
+               ],
+               [
+                  51.135137,
+                  35.421414
+               ],
+               [
+                  51.13536,
+                  35.421979
+               ]
+               ]
+            ]
+         }
+         },
+        {
+         "type": "Feature",
+         "id": "R11LIK-04",
+         "properties": {
+            "name": "R11LIK-04",
+            "shenaseBand": "R11LIK",
+            "karbari": "پرواز",
+            "noeRoye": "آسفالتی",
+            "masahat": "27428",
+            "azmoon_shakhes_nahamvari": "4.02",
+            "azmoon_omq_doroshtbaft": "1.76",
+            "akharin_omq_shiarshodegi": "1.76",
+            "akharin_shakhesh_vaziat": "79.33",
+            "akharin_arzyabi_vaziat": "1398/5/2",
+            "amaliyat_tamir_va_negahdari": "لکه گیری سطحی",
+            "last_serious_repair": "1396/7/2",
+            "noeRosazi": "AC",
+            "color": "rgb(255,255,55)",
+            "IRI_color": "rgb(56,170,56)",
+            "transparent": "rgba(0,0,0,0)"
+         },
+         "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+               [
+                  [
+                     51.138404,
+                     35.421133
+                  ],
+                  [
+                     51.143092,
+                     35.419825
+                  ],
+                  [
+                     51.142865,
+                     35.41927
+                  ],
+                  [
+                     51.138178,
+                     35.420564
+                  ],
+                  [
+                     51.138404,
+                     35.421133
+                  ]
+               ]
+            ]
+         }
+      },
+      {
+         "type": "Feature",
+         "id": "R11LIK-05",
+         "properties": {
+            "name": "R11LIK-05",
+            "shenaseBand": "R11LIK",
+            "karbari": "پرواز",
+            "noeRoye": "آسفالتی",
+            "masahat": "9231",
+            "azmoon_shakhes_nahamvari": "3.34",
+            "azmoon_omq_doroshtbaft": "1.45",
+            "akharin_omq_shiarshodegi": "1.45",
+            "akharin_shakhesh_vaziat": "83.85",
+            "akharin_arzyabi_vaziat": "1398/5/2",
+            "amaliyat_tamir_va_negahdari": "لکه گیری سطحی",
+            "last_serious_repair": "1396/7/2",
+            "noeRosazi": "AC",
+            "color": "rgb(56,170,56)",
+            "IRI_color": "rgb(56,170,56)",
+            "transparent": "rgba(0,0,0,0)"
+         },
+         "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+               [
+                  [
+                     51.143092,
+                     35.419825
+                  ],
+                  [
+                     51.144372,
+                     35.419466
+                  ],
+                  [
+                     51.144135,
+                     35.418884
+                  ],
+                  [
+                     51.142865,
+                     35.41927
+                  ],
+                  [
+                     51.143092,
+                     35.419825
+                  ]
+               ]
+            ]
+         }
+      },
+      {
+         "type": "Feature",
+         "id": "R11LIK-06",
+         "properties": {
+            "name": "R11LIK-06",
+            "shenaseBand": "R11LIK",
+            "karbari": "پرواز",
+            "noeRoye": "آسفالتی",
+            "masahat": "9231",
+            "azmoon_shakhes_nahamvari": "5.09",
+            "azmoon_omq_doroshtbaft": "4.23",
+            "akharin_omq_shiarshodegi": "4.23",
+            "akharin_shakhesh_vaziat": "67.06",
+            "akharin_arzyabi_vaziat": "1398/5/2",
+            "amaliyat_tamir_va_negahdari": "تراش و روکش",
+            "last_serious_repair": "1396/7/2",
+            "noeRosazi": "AC",
+            "color": "rgb(255,255,55)",
+            "IRI_color": "rgb(138,218,138)",
+            "transparent": "rgba(0,0,0,0)"
+         },
+         "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+               [
+                  [
+                     51.144372,
+                     35.419466
+                  ],
+                  [
+                     51.14568,
+                     35.419105
+                  ],
+                  [
+                     51.145433,
+                     35.418541
+                  ],
+                  [
+                     51.144135,
+                     35.418884
+                  ],
+                  [
+                     51.144372,
+                     35.419466
+                  ]
+               ]
+            ]
+         }
+      },
+      {
+         "type": "Feature",
+         "id": "R11LIK-07",
+         "properties": {
+            "name": "R11LIK-07",
+            "shenaseBand": "R11LIK",
+            "karbari": "پرواز",
+            "noeRoye": "آسفالتی",
+            "masahat": "27428",
+            "azmoon_shakhes_nahamvari": "4.71",
+            "azmoon_omq_doroshtbaft": "3.51",
+            "akharin_omq_shiarshodegi": "3.51",
+            "akharin_shakhesh_vaziat": "71",
+            "akharin_arzyabi_vaziat": "1398/5/2",
+            "amaliyat_tamir_va_negahdari": "لکه گیری عمقی",
+            "last_serious_repair": "1396/7/2",
+            "noeRosazi": "AC",
+            "color": "rgb(255,255,55)",
+            "IRI_color": "rgb(56,170,56)",
+            "transparent": "rgba(0,0,0,0)"
+         },
+         "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+               [
+                  [
+                     51.14568,
+                     35.419105
+                  ],
+                  [
+                     51.150069,
+                     35.417887
+                  ],
+                  [
+                     51.149844,
+                     35.417318
+                  ],
+                  [
+                     51.145433,
+                     35.418541
+                  ],
+                  [
+                     51.14568,
+                     35.419105
+                  ]
+               ]
+            ]
+         }
+      },
+      {
+         "type": "Feature",
+         "id": "R11LIK-08",
+         "properties": {
+            "name": "R11LIK-08",
+            "shenaseBand": "R11LIK",
+            "karbari": "پرواز",
+            "noeRoye": "آسفالتی",
+            "masahat": "45223",
+            "azmoon_shakhes_nahamvari": "5.21",
+            "azmoon_omq_doroshtbaft": "7.44",
+            "akharin_omq_shiarshodegi": "7.44",
+            "akharin_shakhesh_vaziat": "62.08",
+            "akharin_arzyabi_vaziat": "1398/5/2",
+            "amaliyat_tamir_va_negahdari": "تراش و روکش",
+            "last_serious_repair": "1396/7/2",
+            "noeRosazi": "AC",
+            "color": "rgb(255,255,55)",
+            "IRI_color": "rgb(138,218,138)",
+            "transparent": "rgba(0,0,0,0)"
+         },
+         "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+               [
+                  [
+                     51.150069,
+                     35.417887
+                  ],
+                  [
+                     51.157581,
+                     35.415788
+                  ],
+                  [
+                     51.157365,
+                     35.415207
+                  ],
+                  [
+                     51.149844,
+                     35.417318
+                  ],
+                  [
+                     51.150069,
+                     35.417887
+                  ]
+               ]
+            ]
+         }
+      },
+      {
+         "type": "Feature",
+         "id": "R11LIK-09",
+         "properties": {
+            "name": "R11LIK-09",
+            "shenaseBand": "R11LIK",
+            "karbari": "پرواز",
+            "noeRoye": "آسفالتی",
+            "masahat": "44988",
+            "azmoon_shakhes_nahamvari": "5.76",
+            "azmoon_omq_doroshtbaft": "0.44",
+            "akharin_omq_shiarshodegi": "0.44",
+            "akharin_shakhesh_vaziat": "53.97",
+            "akharin_arzyabi_vaziat": "1398/5/2",
+            "amaliyat_tamir_va_negahdari": "برچیدن و اجرا",
+            "last_serious_repair": "1396/7/2",
+            "noeRosazi": "AC",
+            "color": "rgb(255,125,25)",
+            "IRI_color": "rgb(255,255,55)",
+            "transparent": "rgba(0,0,0,0)"
+         },
+         "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+               [
+                  [
+                     51.157581,
+                     35.415788
+                  ],
+                  [
+                     51.164666,
+                     35.413805
+                  ],
+                  [
+                     51.164457,
+                     35.413248
+                  ],
+                  [
+                     51.157365,
+                     35.415207
+                  ],
+                  [
+                     51.157581,
+                     35.415788
+                  ]
+               ]
+            ]
+         }
+      },
+      {
+         "type": "Feature",
+         "id": "R11LIK-10",
+         "properties": {
+            "name": "R11LIK-10",
+            "shenaseBand": "R11LIK",
+            "karbari": "پرواز",
+            "noeRoye": "بتنی",
+            "masahat": "8855",
+            "azmoon_shakhes_nahamvari": "3.58",
+            "azmoon_omq_doroshtbaft": "1.58",
+            "akharin_omq_shiarshodegi": "1.58",
+            "akharin_shakhesh_vaziat": "76.38",
+            "akharin_arzyabi_vaziat": "1398/5/2",
+            "amaliyat_tamir_va_negahdari": "لکه گیری عمقی",
+            "last_serious_repair": "1396/7/2",
+            "noeRosazi": "PCC",
+            "color": "rgb(255,255,55)",
+            "IRI_color": "rgb(56,170,56)",
+            "transparent": "rgba(0,0,0,0)"
+         },
+         "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+               [
+                  [
+                     51.164666,
+                     35.413805
+                  ],
+                  [
+                     51.166153,
+                     35.413396
+                  ],
+                  [
+                     51.165936,
+                     35.412827
+                  ],
+                  [
+                     51.164457,
+                     35.413248
+                  ],
+                  [
+                     51.164666,
+                     35.413805
+                  ]
+               ]
+            ]
+         }
+      },
+      {
+      "type": "Feature",
+      "id": "R11RIK-01",
+      "properties": {
+         "name": "R11RIK-01",
+         "shenaseBand": "R11RIK",
+         "karbari": "پرواز",
+         "noeRoye": "بتنی",
+         "masahat": "8034",
+         "azmoon_shakhes_nahamvari": "4.79",
+         "azmoon_omq_doroshtbaft": "9.94",
+         "akharin_omq_shiarshodegi": "9.94",
+         "akharin_shakhesh_vaziat": "70.14",
+         "akharin_arzyabi_vaziat": "1398/5/2",
+         "amaliyat_tamir_va_negahdari": "لکه گیری عمقی",
+         "last_serious_repair": "1396/7/2",
+         "noeRosazi": "PCC",
+         "color": "rgb(255,255,55)",
+         "IRI_color": "rgb(56,170,56)",
+         "transparent": "rgba(0,0,0,0)"
+      },
+      "geometry": {
+         "type": "Polygon",
+         "coordinates": [
+            [
+               [
+                  51.121525,
+                  35.423949
+               ],
+               [
+                  51.123033,
+                  35.423529
+               ],
+               [
+                  51.122821,
+                  35.423016
+               ],
+               [
+                  51.12134,
+                  35.423426
+               ],
+               [
+                  51.121525,
+                  35.423949
+               ]
+            ]
+         ]
+      }
+   },
+   {
+      "type": "Feature",
+      "id": "R11RIK-02",
+      "properties": {
+         "name": "R11RIK-02",
+         "shenaseBand": "R11RIK",
+         "karbari": "پرواز",
+         "noeRoye": "آسفالتی",
+         "masahat": "66551",
+         "azmoon_shakhes_nahamvari": "3.84",
+         "azmoon_omq_doroshtbaft": "8.77",
+         "akharin_omq_shiarshodegi": "8.77",
+         "akharin_shakhesh_vaziat": "75.99",
+         "akharin_arzyabi_vaziat": "1398/5/2",
+         "amaliyat_tamir_va_negahdari": "لکه گیری عمقی",
+         "last_serious_repair": "1396/7/2",
+         "noeRosazi": "AC",
+         "color": "rgb(255,255,55)",
+         "IRI_color": "rgb(56,170,56)",
+         "transparent": "rgba(0,0,0,0)"
+      },
+      "geometry": {
+         "type": "Polygon",
+         "coordinates": [
+            [
+               [
+                  51.123033,
+                  35.423529
+               ],
+               [
+                  51.134908,
+                  35.420225
+               ],
+               [
+                  51.134457,
+                  35.419772
+               ],
+               [
+                  51.122821,
+                  35.423016
+               ],
+               [
+                  51.123033,
+                  35.423529
+               ]
+            ]
+         ]
+      }
+   },
+   {
+      "type": "Feature",
+      "id": "R11RIK-03",
+      "properties": {
+         "name": "R11RIK-03",
+         "shenaseBand": "R11RIK",
+         "karbari": "پرواز",
+         "noeRoye": "آسفالتی",
+         "masahat": "26524",
+         "azmoon_shakhes_nahamvari": "4.65",
+         "azmoon_omq_doroshtbaft": "5.37",
+         "akharin_omq_shiarshodegi": "5.37",
+         "akharin_shakhesh_vaziat": "71.12",
+         "akharin_arzyabi_vaziat": "1398/5/2",
+         "amaliyat_tamir_va_negahdari": "لکه گیری عمقی",
+         "last_serious_repair": "1396/7/2",
+         "noeRosazi": "AC",
+         "color": "rgb(255,255,55)",
+         "IRI_color": "rgb(56,170,56)",
+         "transparent": "rgba(0,0,0,0)"
+      },
+      "geometry": {
+         "type": "Polygon",
+         "coordinates": [
+            [
+               [
+                  51.134908,
+                  35.420225
+               ],
+               [
+                  51.139247,
+                  35.419017
+               ],
+               [
+                  51.139049,
+                  35.418482
+               ],
+               [
+                  51.134457,
+                  35.419772
+               ],
+               [
+                  51.134908,
+                  35.420225
+               ]
+            ]
+         ]
+      }
+   },
+   {
+      "type": "Feature",
+      "id": "R11RIK-04",
+      "properties": {
+         "name": "R11RIK-04",
+         "shenaseBand": "R11RIK",
+         "karbari": "پرواز",
+         "noeRoye": "آسفالتی",
+         "masahat": "25577",
+         "azmoon_shakhes_nahamvari": "4.41",
+         "azmoon_omq_doroshtbaft": "5.34",
+         "akharin_omq_shiarshodegi": "5.34",
+         "akharin_shakhesh_vaziat": "69.68",
+         "akharin_arzyabi_vaziat": "1398/5/2",
+         "amaliyat_tamir_va_negahdari": "تراش و روکش",
+         "last_serious_repair": "1396/7/2",
+         "noeRosazi": "AC",
+         "color": "rgb(255,255,55)",
+         "IRI_color": "rgb(138,218,138)",
+         "transparent": "rgba(0,0,0,0)"
+      },
+      "geometry": {
+         "type": "Polygon",
+         "coordinates": [
+            [
+               [
+                  51.139247,
+                  35.419017
+               ],
+               [
+                  51.143664,
+                  35.417779
+               ],
+               [
+                  51.143462,
+                  35.417266
+               ],
+               [
+                  51.139049,
+                  35.418482
+               ],
+               [
+                  51.139247,
+                  35.419017
+               ]
+            ]
+         ]
+      }
+   },
+   {
+      "type": "Feature",
+      "id": "R11RIK-05",
+      "properties": {
+         "name": "R11RIK-05",
+         "shenaseBand": "R11RIK",
+         "karbari": "پرواز",
+         "noeRoye": "آسفالتی",
+         "masahat": "25577",
+         "azmoon_shakhes_nahamvari": "4.29",
+         "azmoon_omq_doroshtbaft": "5.22",
+         "akharin_omq_shiarshodegi": "5.22",
+         "akharin_shakhesh_vaziat": "71.72",
+         "akharin_arzyabi_vaziat": "1398/5/2",
+         "amaliyat_tamir_va_negahdari": "لکه گیری عمقی",
+         "last_serious_repair": "1396/7/2",
+         "noeRosazi": "AC",
+         "color": "rgb(255,255,55)",
+         "IRI_color": "rgb(56,170,56)",
+         "transparent": "rgba(0,0,0,0)"
+      },
+      "geometry": {
+         "type": "Polygon",
+         "coordinates": [
+            [
+               [
+                  51.143664,
+                  35.417779
+               ],
+               [
+                  51.148063,
+                  35.416554
+               ],
+               [
+                  51.147867,
+                  35.416038
+               ],
+               [
+                  51.143462,
+                  35.417266
+               ],
+               [
+                  51.143664,
+                  35.417779
+               ]
+            ]
+         ]
+      }
+   },
+   {
+      "type": "Feature",
+      "id": "R11RIK-06",
+      "properties": {
+         "name": "R11RIK-06",
+         "shenaseBand": "R11RIK",
+         "karbari": "پرواز",
+         "noeRoye": "آسفالتی",
+         "masahat": "26524",
+         "azmoon_shakhes_nahamvari": "4.05",
+         "azmoon_omq_doroshtbaft": "4.77",
+         "akharin_omq_shiarshodegi": "4.77",
+         "akharin_shakhesh_vaziat": "78",
+         "akharin_arzyabi_vaziat": "1398/5/2",
+         "amaliyat_tamir_va_negahdari": "لکه گیری سطحی",
+         "last_serious_repair": "1396/7/2",
+         "noeRosazi": "AC",
+         "color": "rgb(255,255,55)",
+         "IRI_color": "rgb(56,170,56)",
+         "transparent": "rgba(0,0,0,0)"
+      },
+      "geometry": {
+         "type": "Polygon",
+         "coordinates": [
+            [
+               [
+                  51.148063,
+                  35.416554
+               ],
+               [
+                  51.152459,
+                  35.415323
+               ],
+               [
+                  51.152268,
+                  35.414809
+               ],
+               [
+                  51.147867,
+                  35.416038
+               ],
+               [
+                  51.148063,
+                  35.416554
+               ]
+            ]
+         ]
+      }
+   },
+   {
+      "type": "Feature",
+      "id": "R11RIK-07",
+      "properties": {
+         "name": "R11RIK-07",
+         "shenaseBand": "R11RIK",
+         "karbari": "پرواز",
+         "noeRoye": "آسفالتی",
+         "masahat": "25577",
+         "azmoon_shakhes_nahamvari": "5.88",
+         "azmoon_omq_doroshtbaft": "7.97",
+         "akharin_omq_shiarshodegi": "7.97",
+         "akharin_shakhesh_vaziat": "60.71",
+         "akharin_arzyabi_vaziat": "1398/5/2",
+         "amaliyat_tamir_va_negahdari": "تراش و روکش",
+         "last_serious_repair": "1396/7/2",
+         "noeRosazi": "AC",
+         "color": "rgb(255,125,25)",
+         "IRI_color": "rgb(138,218,138)",
+         "transparent": "rgba(0,0,0,0)"
+      },
+      "geometry": {
+         "type": "Polygon",
+         "coordinates": [
+            [
+               [
+                  51.152459,
+                  35.415323
+               ],
+               [
+                  51.156906,
+                  35.414083
+               ],
+               [
+                  51.156695,
+                  35.413566
+               ],
+               [
+                  51.152268,
+                  35.414809
+               ],
+               [
+                  51.152459,
+                  35.415323
+               ]
+            ]
+         ]
+      }
+   },
+   {
+      "type": "Feature",
+      "id": "R11RIK-08",
+      "properties": {
+         "name": "R11RIK-08",
+         "shenaseBand": "R11RIK",
+         "karbari": "پرواز",
+         "noeRoye": "آسفالتی",
+         "masahat": "40288",
+         "azmoon_shakhes_nahamvari": "5.16",
+         "azmoon_omq_doroshtbaft": "9.43",
+         "akharin_omq_shiarshodegi": "9.43",
+         "akharin_shakhesh_vaziat": "66.46",
+         "akharin_arzyabi_vaziat": "1398/5/2",
+         "amaliyat_tamir_va_negahdari": "تراش و روکش",
+         "last_serious_repair": "1396/7/2",
+         "noeRosazi": "AC",
+         "color": "rgb(255,255,55)",
+         "IRI_color": "rgb(138,218,138)",
+         "transparent": "rgba(0,0,0,0)"
+      },
+      "geometry": {
+         "type": "Polygon",
+         "coordinates": [
+            [
+               [
+                  51.156906,
+                  35.414083
+               ],
+               [
+                  51.163969,
+                  35.412116
+               ],
+               [
+                  51.163759,
+                  35.411602
+               ],
+               [
+                  51.156695,
+                  35.413566
+               ],
+               [
+                  51.156906,
+                  35.414083
+               ]
+            ]
+         ]
+      }
+   },
+   {
+      "type": "Feature",
+      "id": "R11RIK-09",
+      "properties": {
+         "name": "R11RIK-09",
+         "shenaseBand": "R11RIK",
+         "karbari": "پرواز",
+         "noeRoye": "بتنی",
+         "masahat": "7930",
+         "azmoon_shakhes_nahamvari": "2.79",
+         "azmoon_omq_doroshtbaft": "6.19",
+         "akharin_omq_shiarshodegi": "6.19",
+         "akharin_shakhesh_vaziat": "86.26",
+         "akharin_arzyabi_vaziat": "1398/5/2",
+         "amaliyat_tamir_va_negahdari": "درزگیری",
+         "last_serious_repair": "1396/7/2",
+         "noeRosazi": "PCC",
+         "color": "rgb(56,170,56)",
+         "IRI_color": "rgb(0,120,0)",
+         "transparent": "rgba(0,0,0,0)"
+      },
+      "geometry": {
+         "type": "Polygon",
+         "coordinates": [
+            [
+               [
+                  51.163969,
+                  35.412116
+               ],
+               [
+                  51.165463,
+                  35.411703
+               ],
+               [
+                  51.165237,
+                  35.41119
+               ],
+               [
+                  51.163759,
+                  35.411602
+               ],
+               [
+                  51.163969,
+                  35.412116
+               ]
+            ]
+         ]
+      }
+   },
+   {
+      "type": "Feature",
+      "id": "RALIK-01",
+      "properties": {
+         "name": "RALIK-01",
+         "shenaseBand": "RALIK",
+         "karbari": "پرواز",
+         "noeRoye": "آسفالتی",
+         "masahat": "20621",
+         "azmoon_shakhes_nahamvari": "4.11",
+         "azmoon_omq_doroshtbaft": "3.49",
+         "akharin_omq_shiarshodegi": "3.49",
+         "akharin_shakhesh_vaziat": "75.1",
+         "akharin_arzyabi_vaziat": "1398/5/2",
+         "amaliyat_tamir_va_negahdari": "لکه گیری عمقی",
+         "last_serious_repair": "1396/7/2",
+         "noeRosazi": "AC",
+         "color": "rgb(255,255,55)",
+         "IRI_color": "rgb(56,170,56)",
+         "transparent": "rgba(0,0,0,0)"
+      },
+      "geometry": {
+         "type": "Polygon",
+         "coordinates": [
+            [
+               [
+                  51.13397,
+                  35.419264
+               ],
+               [
+                  51.138803,
+                  35.417919
+               ],
+               [
+                  51.138633,
+                  35.417538
+               ],
+               [
+                  51.133812,
+                  35.418881
+               ],
+               [
+                  51.13397,
+                  35.419264
+               ]
+            ]
+         ]
+      }
+   },
+   {
+      "type": "Feature",
+      "id": "RALIK-02",
+      "properties": {
+         "name": "RALIK-02",
+         "shenaseBand": "RALIK",
+         "karbari": "پرواز",
+         "noeRoye": "آسفالتی",
+         "masahat": "20621",
+         "azmoon_shakhes_nahamvari": "5.64",
+         "azmoon_omq_doroshtbaft": "1.51",
+         "akharin_omq_shiarshodegi": "1.51",
+         "akharin_shakhesh_vaziat": "60.96",
+         "akharin_arzyabi_vaziat": "1398/5/2",
+         "amaliyat_tamir_va_negahdari": "تراش و روکش",
+         "last_serious_repair": "1396/7/2",
+         "noeRosazi": "AC",
+         "color": "rgb(255,125,25)",
+         "IRI_color": "rgb(138,218,138)",
+         "transparent": "rgba(0,0,0,0)"
+      },
+      "geometry": {
+         "type": "Polygon",
+         "coordinates": [
+            [
+               [
+                  51.138803,
+                  35.417919
+               ],
+               [
+                  51.143223,
+                  35.416691
+               ],
+               [
+                  51.143054,
+                  35.416299
+               ],
+               [
+                  51.138633,
+                  35.417538
+               ],
+               [
+                  51.138803,
+                  35.417919
+               ]
+            ]
+         ]
+      }
+   },
+   {
+      "type": "Feature",
+      "id": "RALIK-03",
+      "properties": {
+         "name": "RALIK-03",
+         "shenaseBand": "RALIK",
+         "karbari": "پرواز",
+         "noeRoye": "آسفالتی",
+         "masahat": "20621",
+         "azmoon_shakhes_nahamvari": "2.15",
+         "azmoon_omq_doroshtbaft": "6.6",
+         "akharin_omq_shiarshodegi": "6.6",
+         "akharin_shakhesh_vaziat": "90.56",
+         "akharin_arzyabi_vaziat": "1398/5/2",
+         "amaliyat_tamir_va_negahdari": "هیچ اقدامی نشود",
+         "last_serious_repair": "1396/7/2",
+         "noeRosazi": "AC",
+         "color": "rgb(56,170,56)",
+         "IRI_color": "rgb(0,120,0)",
+         "transparent": "rgba(0,0,0,0)"
+      },
+      "geometry": {
+         "type": "Polygon",
+         "coordinates": [
+            [
+               [
+                  51.143223,
+                  35.416691
+               ],
+               [
+                  51.147633,
+                  35.415461
+               ],
+               [
+                  51.147469,
+                  35.415085
+               ],
+               [
+                  51.143054,
+                  35.416299
+               ],
+               [
+                  51.143223,
+                  35.416691
+               ]
+            ]
+         ]
+      }
+   },
+   {
+      "type": "Feature",
+      "id": "RALIK-04",
+      "properties": {
+         "name": "RALIK-04",
+         "shenaseBand": "RALIK",
+         "karbari": "پرواز",
+         "noeRoye": "آسفالتی",
+         "masahat": "20621",
+         "azmoon_shakhes_nahamvari": "2.67",
+         "azmoon_omq_doroshtbaft": "3.05",
+         "akharin_omq_shiarshodegi": "3.05",
+         "akharin_shakhesh_vaziat": "91.59",
+         "akharin_arzyabi_vaziat": "1398/5/2",
+         "amaliyat_tamir_va_negahdari": "هیچ اقدامی نشود",
+         "last_serious_repair": "1396/7/2",
+         "noeRosazi": "AC",
+         "color": "rgb(56,170,56)",
+         "IRI_color": "rgb(0,120,0)",
+         "transparent": "rgba(0,0,0,0)"
+      },
+      "geometry": {
+         "type": "Polygon",
+         "coordinates": [
+            [
+               [
+                  51.147633,
+                  35.415461
+               ],
+               [
+                  51.152035,
+                  35.414242
+               ],
+               [
+                  51.151875,
+                  35.413849
+               ],
+               [
+                  51.147469,
+                  35.415085
+               ],
+               [
+                  51.147633,
+                  35.415461
+               ]
+            ]
+         ]
+      }
+   },
+   {
+      "type": "Feature",
+      "id": "RALIK-05",
+      "properties": {
+         "name": "RALIK-05",
+         "shenaseBand": "RALIK",
+         "karbari": "پرواز",
+         "noeRoye": "آسفالتی",
+         "masahat": "9580",
+         "azmoon_shakhes_nahamvari": "4.77",
+         "azmoon_omq_doroshtbaft": "5.44",
+         "akharin_omq_shiarshodegi": "5.44",
+         "akharin_shakhesh_vaziat": "71.32",
+         "akharin_arzyabi_vaziat": "1398/5/2",
+         "amaliyat_tamir_va_negahdari": "لکه گیری عمقی",
+         "last_serious_repair": "1396/7/2",
+         "noeRosazi": "AC",
+         "color": "rgb(255,255,55)",
+         "IRI_color": "rgb(56,170,56)",
+         "transparent": "rgba(0,0,0,0)"
+      },
+      "geometry": {
+         "type": "Polygon",
+         "coordinates": [
+            [
+               [
+                  51.152035,
+                  35.414242
+               ],
+               [
+                  51.154259,
+                  35.413612
+               ],
+               [
+                  51.15409,
+                  35.413224
+               ],
+               [
+                  51.151875,
+                  35.413849
+               ],
+               [
+                  51.152035,
+                  35.414242
+               ]
+            ]
+         ]
+      }
+   },
+   {
+      "type": "Feature",
+      "id": "RALIK-06",
+      "properties": {
+         "name": "RALIK-06",
+         "shenaseBand": "RALIK",
+         "karbari": "پرواز",
+         "noeRoye": "آسفالتی",
+         "masahat": "9580",
+         "azmoon_shakhes_nahamvari": "4",
+         "azmoon_omq_doroshtbaft": "6.86",
+         "akharin_omq_shiarshodegi": "6.86",
+         "akharin_shakhesh_vaziat": "72.14",
+         "akharin_arzyabi_vaziat": "1398/5/2",
+         "amaliyat_tamir_va_negahdari": "لکه گیری عمقی",
+         "last_serious_repair": "1396/7/2",
+         "noeRosazi": "AC",
+         "color": "rgb(255,255,55)",
+         "IRI_color": "rgb(56,170,56)",
+         "transparent": "rgba(0,0,0,0)"
+      },
+      "geometry": {
+         "type": "Polygon",
+         "coordinates": [
+            [
+               [
+                  51.154259,
+                  35.413612
+               ],
+               [
+                  51.156459,
+                  35.413008
+               ],
+               [
+                  51.156295,
+                  35.412618
+               ],
+               [
+                  51.15409,
+                  35.413224
+               ],
+               [
+                  51.154259,
+                  35.413612
+               ]
+            ]
+         ]
+      }
+   },
+   {
+      "type": "Feature",
+      "id": "RALIK-07",
+      "properties": {
+         "name": "RALIK-07",
+         "shenaseBand": "RALIK",
+         "karbari": "پرواز",
+         "noeRoye": "آسفالتی",
+         "masahat": "10920",
+         "azmoon_shakhes_nahamvari": "2.2",
+         "azmoon_omq_doroshtbaft": "0.69",
+         "akharin_omq_shiarshodegi": "0.69",
+         "akharin_shakhesh_vaziat": "89.24",
+         "akharin_arzyabi_vaziat": "1398/5/2",
+         "amaliyat_tamir_va_negahdari": "درزگیری",
+         "last_serious_repair": "1396/7/2",
+         "noeRosazi": "AC",
+         "color": "rgb(56,170,56)",
+         "IRI_color": "rgb(0,120,0)",
+         "transparent": "rgba(0,0,0,0)"
+      },
+      "geometry": {
+         "type": "Polygon",
+         "coordinates": [
+            [
+               [
+                  51.156459,
+                  35.413008
+               ],
+               [
+                  51.158942,
+                  35.412309
+               ],
+               [
+                  51.158796,
+                  35.411919
+               ],
+               [
+                  51.156295,
+                  35.412618
+               ],
+               [
+                  51.156459,
+                  35.413008
+               ]
+            ]
+         ]
+      }
+   },
+   {
+      "type": "Feature",
+      "id": "RALIK-08",
+      "properties": {
+         "name": "RALIK-08",
+         "shenaseBand": "RALIK",
+         "karbari": "پرواز",
+         "noeRoye": "آسفالتی",
+         "masahat": "10920",
+         "azmoon_shakhes_nahamvari": "4.43",
+         "azmoon_omq_doroshtbaft": "7.76",
+         "akharin_omq_shiarshodegi": "7.76",
+         "akharin_shakhesh_vaziat": "66.21",
+         "akharin_arzyabi_vaziat": "1398/5/2",
+         "amaliyat_tamir_va_negahdari": "تراش و روکش",
+         "last_serious_repair": "1396/7/2",
+         "noeRosazi": "AC",
+         "color": "rgb(255,255,55)",
+         "IRI_color": "rgb(138,218,138)",
+         "transparent": "rgba(0,0,0,0)"
+      },
+      "geometry": {
+         "type": "Polygon",
+         "coordinates": [
+            [
+               [
+                  51.158942,
+                  35.412309
+               ],
+               [
+                  51.161506,
+                  35.411594
+               ],
+               [
+                  51.161336,
+                  35.411209
+               ],
+               [
+                  51.158796,
+                  35.411919
+               ],
+               [
+                  51.158942,
+                  35.412309
+               ]
+            ]
+         ]
+      }
+   },
+   {
+      "type": "Feature",
+      "id": "RALIK-09",
+      "properties": {
+         "name": "RALIK-09",
+         "shenaseBand": "RALIK",
+         "karbari": "پرواز",
+         "noeRoye": "آسفالتی",
+         "masahat": "8843",
+         "azmoon_shakhes_nahamvari": "3.81",
+         "azmoon_omq_doroshtbaft": "8.03",
+         "akharin_omq_shiarshodegi": "8.03",
+         "akharin_shakhesh_vaziat": "74.06",
+         "akharin_arzyabi_vaziat": "1398/5/2",
+         "amaliyat_tamir_va_negahdari": "لکه گیری عمقی",
+         "last_serious_repair": "1396/7/2",
+         "noeRosazi": "AC",
+         "color": "rgb(255,255,55)",
+         "IRI_color": "rgb(56,170,56)",
+         "transparent": "rgba(0,0,0,0)"
+      },
+      "geometry": {
+         "type": "Polygon",
+         "coordinates": [
+            [
+               [
+                  51.161506,
+                  35.411594
+               ],
+               [
+                  51.163515,
+                  35.411034
+               ],
+               [
+                  51.163349,
+                  35.410647
+               ],
+               [
+                  51.161336,
+                  35.411209
+               ],
+               [
+                  51.161506,
+                  35.411594
+               ]
+            ]
+         ]
+      }
+   },
+   {
+      "type": "Feature",
+      "id": "RALIK-10",
+      "properties": {
+         "name": "RALIK-10",
+         "shenaseBand": "RALIK",
+         "karbari": "پرواز",
+         "noeRoye": "بتنی",
+         "masahat": "6923",
+         "azmoon_shakhes_nahamvari": "3.77",
+         "azmoon_omq_doroshtbaft": "6.02",
+         "akharin_omq_shiarshodegi": "6.02",
+         "akharin_shakhesh_vaziat": "78.64",
+         "akharin_arzyabi_vaziat": "1398/5/2",
+         "amaliyat_tamir_va_negahdari": "لکه گیری سطحی",
+         "last_serious_repair": "1396/7/2",
+         "noeRosazi": "PCC",
+         "color": "rgb(255,255,55)",
+         "IRI_color": "rgb(56,170,56)",
+         "transparent": "rgba(0,0,0,0)"
+      },
+      "geometry": {
+         "type": "Polygon",
+         "coordinates": [
+            [
+               [
+                  51.163515,
+                  35.411034
+               ],
+               [
+                  51.165012,
+                  35.410638
+               ],
+               [
+                  51.164842,
+                  35.410229
+               ],
+               [
+                  51.163349,
+                  35.410647
+               ],
+               [
+                  51.163515,
+                  35.411034
+               ]
+            ]
+         ]
+      }
+   },
+   {
+      "type": "Feature",
+      "id": "TA01IK-01",
+      "properties": {
+         "name": "TA01IK-01",
+         "shenaseBand": "TA01IK",
+         "karbari": "تاکسی‏وی",
+         "noeRoye": "آسفالتی",
+         "masahat": "29815",
+         "azmoon_shakhes_nahamvari": "2.61",
+         "azmoon_omq_doroshtbaft": "9.11",
+         "akharin_omq_shiarshodegi": "9.11",
+         "akharin_shakhesh_vaziat": "92.73",
+         "akharin_arzyabi_vaziat": "1398/5/2",
+         "amaliyat_tamir_va_negahdari": "هیچ اقدامی نشود",
+         "last_serious_repair": "1396/7/2",
+         "noeRosazi": "AC",
+         "color": "rgb(56,170,56)",
+         "IRI_color": "rgb(0,120,0)",
+         "transparent": "rgba(0,0,0,0)"
+      },
+      "geometry": {
+         "type": "Polygon",
+         "coordinates": [
+            [
+               [
+                  51.124509,
+                  35.431147
+               ],
+               [
+                  51.124981,
+                  35.431012
+               ],
+               [
+                  51.122861,
+                  35.425484
+               ],
+               [
+                  51.122225,
+                  35.425676
+               ],
+               [
+                  51.124509,
+                  35.431147
+               ]
+            ]
+         ]
+      }
+   },
+   {
+      "type": "Feature",
+      "id": "TB01IK-01",
+      "properties": {
+         "name": "TB01IK-01",
+         "shenaseBand": "TB01IK",
+         "karbari": "تاکسی‏وی",
+         "noeRoye": "آسفالتی",
+         "masahat": "6250",
+         "azmoon_shakhes_nahamvari": "5.07",
+         "azmoon_omq_doroshtbaft": "3.49",
+         "akharin_omq_shiarshodegi": "3.49",
+         "akharin_shakhesh_vaziat": "63.36",
+         "akharin_arzyabi_vaziat": "1398/5/2",
+         "amaliyat_tamir_va_negahdari": "تراش و روکش",
+         "last_serious_repair": "1396/7/2",
+         "noeRosazi": "AC",
+         "color": "rgb(255,255,55)",
+         "IRI_color": "rgb(138,218,138)",
+         "transparent": "rgba(0,0,0,0)"
+      },
+      "geometry": {
+         "type": "Polygon",
+         "coordinates": [
+            [
+               [
+                  51.121992,
+                  35.425067
+               ],
+               [
+                  51.122449,
+                  35.424928
+               ],
+               [
+                  51.122014,
+                  35.423815
+               ],
+               [
+                  51.121525,
+                  35.423949
+               ],
+               [
+                  51.121992,
+                  35.425067
+               ]
+            ]
+         ]
+      }
+   },
+   {
+      "type": "Feature",
+      "id": "TB02IK-01",
+      "properties": {
+         "name": "TB02IK-01",
+         "shenaseBand": "TB02IK",
+         "karbari": "تاکسی‏وی",
+         "noeRoye": "آسفالتی",
+         "masahat": "6250",
+         "azmoon_shakhes_nahamvari": "5.47",
+         "azmoon_omq_doroshtbaft": "0.21",
+         "akharin_omq_shiarshodegi": "0.21",
+         "akharin_shakhesh_vaziat": "57.2",
+         "akharin_arzyabi_vaziat": "1398/5/2",
+         "amaliyat_tamir_va_negahdari": "برچیدن و اجرا",
+         "last_serious_repair": "1396/7/2",
+         "noeRosazi": "AC",
+         "color": "rgb(255,255,55)",
+         "IRI_color": "rgb(138,218,138)",
+         "transparent": "rgba(0,0,0,0)"
+      },
+      "geometry": {
+         "type": "Polygon",
+         "coordinates": [
+            [
+               [
+                  51.123231,
+                  35.424725
+               ],
+               [
+                  51.123708,
+                  35.424573
+               ],
+               [
+                  51.123267,
+                  35.42347
+               ],
+               [
+                  51.122791,
+                  35.423594
+               ],
+               [
+                  51.123231,
+                  35.424725
+               ]
+            ]
+         ]
+      }
+   },
+   {
+      "type": "Feature",
+      "id": "TB03IK-01",
+      "properties": {
+         "name": "TB03IK-01",
+         "shenaseBand": "TB03IK",
+         "karbari": "تاکسی‏وی",
+         "noeRoye": "آسفالتی",
+         "masahat": "6250",
+         "azmoon_shakhes_nahamvari": "4.6",
+         "azmoon_omq_doroshtbaft": "3.96",
+         "akharin_omq_shiarshodegi": "3.96",
+         "akharin_shakhesh_vaziat": "72.06",
+         "akharin_arzyabi_vaziat": "1398/5/2",
+         "amaliyat_tamir_va_negahdari": "لکه گیری عمقی",
+         "last_serious_repair": "1396/7/2",
+         "noeRosazi": "AC",
+         "color": "rgb(255,255,55)",
+         "IRI_color": "rgb(56,170,56)",
+         "transparent": "rgba(0,0,0,0)"
+      },
+      "geometry": {
+         "type": "Polygon",
+         "coordinates": [
+            [
+               [
+                  51.134903,
+                  35.421474
+               ],
+               [
+                  51.135373,
+                  35.421347
+               ],
+               [
+                  51.134908,
+                  35.420225
+               ],
+               [
+                  51.134446,
+                  35.420357
+               ],
+               [
+                  51.134903,
+                  35.421474
+               ]
+            ]
+         ]
+      }
+   },
+   {
+      "type": "Feature",
+      "id": "TB04IK-01",
+      "properties": {
+         "name": "TB04IK-01",
+         "shenaseBand": "TB04IK",
+         "karbari": "تاکسی‏وی",
+         "noeRoye": "آسفالتی",
+         "masahat": "12865",
+         "azmoon_shakhes_nahamvari": "5.2",
+         "azmoon_omq_doroshtbaft": "7.41",
+         "akharin_omq_shiarshodegi": "7.41",
+         "akharin_shakhesh_vaziat": "62.72",
+         "akharin_arzyabi_vaziat": "1398/5/2",
+         "amaliyat_tamir_va_negahdari": "تراش و روکش",
+         "last_serious_repair": "1396/7/2",
+         "noeRosazi": "AC",
+         "color": "rgb(255,255,55)",
+         "IRI_color": "rgb(138,218,138)",
+         "transparent": "rgba(0,0,0,0)"
+      },
+      "geometry": {
+         "type": "Polygon",
+         "coordinates": [
+            [
+               [
+                  51.137588,
+                  35.420718
+               ],
+               [
+                  51.138547,
+                  35.420459
+               ],
+               [
+                  51.135725,
+                  35.420011
+               ],
+               [
+                  51.134908,
+                  35.420225
+               ],
+               [
+                  51.137588,
+                  35.420718
+               ]
+            ]
+         ]
+      }
+   },
+   {
+      "type": "Feature",
+      "id": "TB05IK-01",
+      "properties": {
+         "name": "TB05IK-01",
+         "shenaseBand": "TB05IK",
+         "karbari": "تاکسی‏وی",
+         "noeRoye": "آسفالتی",
+         "masahat": "12865",
+         "azmoon_shakhes_nahamvari": "2.57",
+         "azmoon_omq_doroshtbaft": "8.07",
+         "akharin_omq_shiarshodegi": "8.07",
+         "akharin_shakhesh_vaziat": "86.02",
+         "akharin_arzyabi_vaziat": "1398/5/2",
+         "amaliyat_tamir_va_negahdari": "درزگیری",
+         "last_serious_repair": "1396/7/2",
+         "noeRosazi": "AC",
+         "color": "rgb(56,170,56)",
+         "IRI_color": "rgb(0,120,0)",
+         "transparent": "rgba(0,0,0,0)"
+      },
+      "geometry": {
+         "type": "Polygon",
+         "coordinates": [
+            [
+               [
+                  51.142198,
+                  35.419443
+               ],
+               [
+                  51.143415,
+                  35.41911
+               ],
+               [
+                  51.140308,
+                  35.418722
+               ],
+               [
+                  51.139247,
+                  35.419017
+               ],
+               [
+                  51.142198,
+                  35.419443
+               ]
+            ]
+         ]
+      }
+   },
+   {
+      "type": "Feature",
+      "id": "TB06IK-01",
+      "properties": {
+         "name": "TB06IK-01",
+         "shenaseBand": "TB06IK",
+         "karbari": "تاکسی‏وی",
+         "noeRoye": "آسفالتی",
+         "masahat": "6250",
+         "azmoon_shakhes_nahamvari": "3.39",
+         "azmoon_omq_doroshtbaft": "0.97",
+         "akharin_omq_shiarshodegi": "0.97",
+         "akharin_shakhesh_vaziat": "83.61",
+         "akharin_arzyabi_vaziat": "1398/5/2",
+         "amaliyat_tamir_va_negahdari": "لکه گیری سطحی",
+         "last_serious_repair": "1396/7/2",
+         "noeRosazi": "AC",
+         "color": "rgb(56,170,56)",
+         "IRI_color": "rgb(56,170,56)",
+         "transparent": "rgba(0,0,0,0)"
+      },
+      "geometry": {
+         "type": "Polygon",
+         "coordinates": [
+            [
+               [
+                  51.143899,
+                  35.418947
+               ],
+               [
+                  51.144366,
+                  35.418823
+               ],
+               [
+                  51.143911,
+                  35.41772
+               ],
+               [
+                  51.143423,
+                  35.417842
+               ],
+               [
+                  51.143899,
+                  35.418947
+               ]
+            ]
+         ]
+      }
+   },
+   {
+      "type": "Feature",
+      "id": "TB07IK-01",
+      "properties": {
+         "name": "TB07IK-01",
+         "shenaseBand": "TB07IK",
+         "karbari": "تاکسی‏وی",
+         "noeRoye": "آسفالتی",
+         "masahat": "13045",
+         "azmoon_shakhes_nahamvari": "4.7",
+         "azmoon_omq_doroshtbaft": "8.5",
+         "akharin_omq_shiarshodegi": "8.5",
+         "akharin_shakhesh_vaziat": "64.51",
+         "akharin_arzyabi_vaziat": "1398/5/2",
+         "amaliyat_tamir_va_negahdari": "تراش و روکش",
+         "last_serious_repair": "1396/7/2",
+         "noeRosazi": "AC",
+         "color": "rgb(255,255,55)",
+         "IRI_color": "rgb(138,218,138)",
+         "transparent": "rgba(0,0,0,0)"
+      },
+      "geometry": {
+         "type": "Polygon",
+         "coordinates": [
+            [
+               [
+                  51.144891,
+                  35.418694
+               ],
+               [
+                  51.146096,
+                  35.41836
+               ],
+               [
+                  51.148063,
+                  35.416554
+               ],
+               [
+                  51.147088,
+                  35.416829
+               ],
+               [
+                  51.144891,
+                  35.418694
+               ]
+            ]
+         ]
+      }
+   },
+   {
+      "type": "Feature",
+      "id": "TB08IK-01",
+      "properties": {
+         "name": "TB08IK-01",
+         "shenaseBand": "TB08IK",
+         "karbari": "تاکسی‏وی",
+         "noeRoye": "آسفالتی",
+         "masahat": "13045",
+         "azmoon_shakhes_nahamvari": "3.89",
+         "azmoon_omq_doroshtbaft": "0.75",
+         "akharin_omq_shiarshodegi": "0.75",
+         "akharin_shakhesh_vaziat": "76.31",
+         "akharin_arzyabi_vaziat": "1398/5/2",
+         "amaliyat_tamir_va_negahdari": "لکه گیری عمقی",
+         "last_serious_repair": "1396/7/2",
+         "noeRosazi": "AC",
+         "color": "rgb(255,255,55)",
+         "IRI_color": "rgb(56,170,56)",
+         "transparent": "rgba(0,0,0,0)"
+      },
+      "geometry": {
+         "type": "Polygon",
+         "coordinates": [
+            [
+               [
+                  51.149094,
+                  35.417533
+               ],
+               [
+                  51.1505,
+                  35.417128
+               ],
+               [
+                  51.152459,
+                  35.415323
+               ],
+               [
+                  51.151472,
+                  35.415608
+               ],
+               [
+                  51.149094,
+                  35.417533
+               ]
+            ]
+         ]
+      }
+   },
+   {
+      "type": "Feature",
+      "id": "TB09IK-01",
+      "properties": {
+         "name": "TB09IK-01",
+         "shenaseBand": "TB09IK",
+         "karbari": "تاکسی‏وی",
+         "noeRoye": "آسفالتی",
+         "masahat": "6250",
+         "azmoon_shakhes_nahamvari": "3.72",
+         "azmoon_omq_doroshtbaft": "4.42",
+         "akharin_omq_shiarshodegi": "4.42",
+         "akharin_shakhesh_vaziat": "75.57",
+         "akharin_arzyabi_vaziat": "1398/5/2",
+         "amaliyat_tamir_va_negahdari": "لکه گیری عمقی",
+         "last_serious_repair": "1396/7/2",
+         "noeRosazi": "AC",
+         "color": "rgb(255,255,55)",
+         "IRI_color": "rgb(56,170,56)",
+         "transparent": "rgba(0,0,0,0)"
+      },
+      "geometry": {
+         "type": "Polygon",
+         "coordinates": [
+            [
+               [
+                  51.157138,
+                  35.415276
+               ],
+               [
+                  51.157598,
+                  35.41515
+               ],
+               [
+                  51.157138,
+                  35.414026
+               ],
+               [
+                  51.156679,
+                  35.414155
+               ],
+               [
+                  51.157138,
+                  35.415276
+               ]
+            ]
+         ]
+      }
+   },
+   {
+      "type": "Feature",
+      "id": "TB10IK-01",
+      "properties": {
+         "name": "TB10IK-01",
+         "shenaseBand": "TB10IK",
+         "karbari": "تاکسی‏وی",
+         "noeRoye": "آسفالتی",
+         "masahat": "6250",
+         "azmoon_shakhes_nahamvari": "5.74",
+         "azmoon_omq_doroshtbaft": "2",
+         "akharin_omq_shiarshodegi": "2",
+         "akharin_shakhesh_vaziat": "54.37",
+         "akharin_arzyabi_vaziat": "1398/5/2",
+         "amaliyat_tamir_va_negahdari": "برچیدن و اجرا",
+         "last_serious_repair": "1396/7/2",
+         "noeRosazi": "AC",
+         "color": "rgb(255,125,25)",
+         "IRI_color": "rgb(255,255,55)",
+         "transparent": "rgba(0,0,0,0)"
+      },
+      "geometry": {
+         "type": "Polygon",
+         "coordinates": [
+            [
+               [
+                  51.16422,
+                  35.413314
+               ],
+               [
+                  51.164689,
+                  35.413173
+               ],
+               [
+                  51.164208,
+                  35.412054
+               ],
+               [
+                  51.163733,
+                  35.412185
+               ],
+               [
+                  51.16422,
+                  35.413314
+               ]
+            ]
+         ]
+      }
+   },
+   {
+      "type": "Feature",
+      "id": "TB11IK-01",
+      "properties": {
+         "name": "TB11IK-01",
+         "shenaseBand": "TB11IK",
+         "karbari": "تاکسی‏وی",
+         "noeRoye": "آسفالتی",
+         "masahat": "6250",
+         "azmoon_shakhes_nahamvari": "4.05",
+         "azmoon_omq_doroshtbaft": "0.37",
+         "akharin_omq_shiarshodegi": "0.37",
+         "akharin_shakhesh_vaziat": "71.17",
+         "akharin_arzyabi_vaziat": "1398/5/2",
+         "amaliyat_tamir_va_negahdari": "لکه گیری عمقی",
+         "last_serious_repair": "1396/7/2",
+         "noeRosazi": "AC",
+         "color": "rgb(255,255,55)",
+         "IRI_color": "rgb(56,170,56)",
+         "transparent": "rgba(0,0,0,0)"
+      },
+      "geometry": {
+         "type": "Polygon",
+         "coordinates": [
+            [
+               [
+                  51.165459,
+                  35.412961
+               ],
+               [
+                  51.165936,
+                  35.412827
+               ],
+               [
+                  51.165463,
+                  35.411703
+               ],
+               [
+                  51.164988,
+                  35.411836
+               ],
+               [
+                  51.165459,
+                  35.412961
+               ]
+            ]
+         ]
+      }
+   },
+   {
+      "type": "Feature",
+      "id": "TC01IK-01",
+      "properties": {
+         "name": "TC01IK-01",
+         "shenaseBand": "TC01IK",
+         "karbari": "تاکسی‏وی",
+         "noeRoye": "آسفالتی",
+         "masahat": "3410",
+         "azmoon_shakhes_nahamvari": "3.41",
+         "azmoon_omq_doroshtbaft": "5.98",
+         "akharin_omq_shiarshodegi": "5.98",
+         "akharin_shakhesh_vaziat": "76.21",
+         "akharin_arzyabi_vaziat": "1398/5/2",
+         "amaliyat_tamir_va_negahdari": "لکه گیری عمقی",
+         "last_serious_repair": "1396/7/2",
+         "noeRosazi": "AC",
+         "color": "rgb(56,170,56)",
+         "IRI_color": "rgb(56,170,56)",
+         "transparent": "rgba(0,0,0,0)"
+      },
+      "geometry": {
+         "type": "Polygon",
+         "coordinates": [
+            [
+               [
+                  51.134211,
+                  35.419835
+               ],
+               [
+                  51.134694,
+                  35.419695
+               ],
+               [
+                  51.134456,
+                  35.41914
+               ],
+               [
+                  51.13397,
+                  35.419264
+               ],
+               [
+                  51.134211,
+                  35.419835
+               ]
+            ]
+         ]
+      }
+   },
+   {
+      "type": "Feature",
+      "id": "TC02IK-01",
+      "properties": {
+         "name": "TC02IK-01",
+         "shenaseBand": "TC02IK",
+         "karbari": "تاکسی‏وی",
+         "noeRoye": "آسفالتی",
+         "masahat": "3410",
+         "azmoon_shakhes_nahamvari": "2.32",
+         "azmoon_omq_doroshtbaft": "0.48",
+         "akharin_omq_shiarshodegi": "0.48",
+         "akharin_shakhesh_vaziat": "94.06",
+         "akharin_arzyabi_vaziat": "1398/5/2",
+         "amaliyat_tamir_va_negahdari": "هیچ اقدامی نشود",
+         "last_serious_repair": "1396/7/2",
+         "noeRosazi": "AC",
+         "color": "rgb(56,170,56)",
+         "IRI_color": "rgb(0,120,0)",
+         "transparent": "rgba(0,0,0,0)"
+      },
+      "geometry": {
+         "type": "Polygon",
+         "coordinates": [
+            [
+               [
+                  51.138785,
+                  35.418554
+               ],
+               [
+                  51.139319,
+                  35.418417
+               ],
+               [
+                  51.139094,
+                  35.417836
+               ],
+               [
+                  51.138561,
+                  35.417991
+               ],
+               [
+                  51.138785,
+                  35.418554
+               ]
+            ]
+         ]
+      }
+   },
+   {
+      "type": "Feature",
+      "id": "TC03IK-01",
+      "properties": {
+         "name": "TC03IK-01",
+         "shenaseBand": "TC03IK",
+         "karbari": "تاکسی‏وی",
+         "noeRoye": "آسفالتی",
+         "masahat": "3410",
+         "azmoon_shakhes_nahamvari": "5.02",
+         "azmoon_omq_doroshtbaft": "6.92",
+         "akharin_omq_shiarshodegi": "6.92",
+         "akharin_shakhesh_vaziat": "69.01",
+         "akharin_arzyabi_vaziat": "1398/5/2",
+         "amaliyat_tamir_va_negahdari": "تراش و روکش",
+         "last_serious_repair": "1396/7/2",
+         "noeRosazi": "AC",
+         "color": "rgb(255,255,55)",
+         "IRI_color": "rgb(138,218,138)",
+         "transparent": "rgba(0,0,0,0)"
+      },
+      "geometry": {
+         "type": "Polygon",
+         "coordinates": [
+            [
+               [
+                  51.143222,
+                  35.417327
+               ],
+               [
+                  51.143695,
+                  35.417198
+               ],
+               [
+                  51.143464,
+                  35.416628
+               ],
+               [
+                  51.14298,
+                  35.416763
+               ],
+               [
+                  51.143222,
+                  35.417327
+               ]
+            ]
+         ]
+      }
+   },
+   {
+      "type": "Feature",
+      "id": "TC04IK-01",
+      "properties": {
+         "name": "TC04IK-01",
+         "shenaseBand": "TC04IK",
+         "karbari": "تاکسی‏وی",
+         "noeRoye": "آسفالتی",
+         "masahat": "3410",
+         "azmoon_shakhes_nahamvari": "5.36",
+         "azmoon_omq_doroshtbaft": "0.24",
+         "akharin_omq_shiarshodegi": "0.24",
+         "akharin_shakhesh_vaziat": "62.33",
+         "akharin_arzyabi_vaziat": "1398/5/2",
+         "amaliyat_tamir_va_negahdari": "تراش و روکش",
+         "last_serious_repair": "1396/7/2",
+         "noeRosazi": "AC",
+         "color": "rgb(255,255,55)",
+         "IRI_color": "rgb(138,218,138)",
+         "transparent": "rgba(0,0,0,0)"
+      },
+      "geometry": {
+         "type": "Polygon",
+         "coordinates": [
+            [
+               [
+                  51.147639,
+                  35.416098
+               ],
+               [
+                  51.148101,
+                  35.415975
+               ],
+               [
+                  51.147863,
+                  35.415395
+               ],
+               [
+                  51.147393,
+                  35.415528
+               ],
+               [
+                  51.147639,
+                  35.416098
+               ]
+            ]
+         ]
+      }
+   },
+   {
+      "type": "Feature",
+      "id": "TC05IK-01",
+      "properties": {
+         "name": "TC05IK-01",
+         "shenaseBand": "TC05IK",
+         "karbari": "تاکسی‏وی",
+         "noeRoye": "آسفالتی",
+         "masahat": "3410",
+         "azmoon_shakhes_nahamvari": "4.91",
+         "azmoon_omq_doroshtbaft": "0.31",
+         "akharin_omq_shiarshodegi": "0.31",
+         "akharin_shakhesh_vaziat": "61.03",
+         "akharin_arzyabi_vaziat": "1398/5/2",
+         "amaliyat_tamir_va_negahdari": "تراش و روکش",
+         "last_serious_repair": "1396/7/2",
+         "noeRosazi": "AC",
+         "color": "rgb(255,255,55)",
+         "IRI_color": "rgb(138,218,138)",
+         "transparent": "rgba(0,0,0,0)"
+      },
+      "geometry": {
+         "type": "Polygon",
+         "coordinates": [
+            [
+               [
+                  51.152012,
+                  35.414882
+               ],
+               [
+                  51.152514,
+                  35.414746
+               ],
+               [
+                  51.152289,
+                  35.414171
+               ],
+               [
+                  51.15179,
+                  35.414313
+               ],
+               [
+                  51.152012,
+                  35.414882
+               ]
+            ]
+         ]
+      }
+   },
+   {
+      "type": "Feature",
+      "id": "TC06IK-01",
+      "properties": {
+         "name": "TC06IK-01",
+         "shenaseBand": "TC06IK",
+         "karbari": "تاکسی‏وی",
+         "noeRoye": "آسفالتی",
+         "masahat": "3410",
+         "azmoon_shakhes_nahamvari": "4.96",
+         "azmoon_omq_doroshtbaft": "1.32",
+         "akharin_omq_shiarshodegi": "1.32",
+         "akharin_shakhesh_vaziat": "63.54",
+         "akharin_arzyabi_vaziat": "1398/5/2",
+         "amaliyat_tamir_va_negahdari": "تراش و روکش",
+         "last_serious_repair": "1396/7/2",
+         "noeRosazi": "AC",
+         "color": "rgb(255,255,55)",
+         "IRI_color": "rgb(138,218,138)",
+         "transparent": "rgba(0,0,0,0)"
+      },
+      "geometry": {
+         "type": "Polygon",
+         "coordinates": [
+            [
+               [
+                  51.15646,
+                  35.413638
+               ],
+               [
+                  51.156935,
+                  35.413507
+               ],
+               [
+                  51.1567,
+                  35.412936
+               ],
+               [
+                  51.156223,
+                  35.413074
+               ],
+               [
+                  51.15646,
+                  35.413638
+               ]
+            ]
+         ]
+      }
+   },
+   {
+      "type": "Feature",
+      "id": "TC07IK-01",
+      "properties": {
+         "name": "TC07IK-01",
+         "shenaseBand": "TC07IK",
+         "karbari": "تاکسی‏وی",
+         "noeRoye": "آسفالتی",
+         "masahat": "3410",
+         "azmoon_shakhes_nahamvari": "5.3",
+         "azmoon_omq_doroshtbaft": "7.37",
+         "akharin_omq_shiarshodegi": "7.37",
+         "akharin_shakhesh_vaziat": "63.01",
+         "akharin_arzyabi_vaziat": "1398/5/2",
+         "amaliyat_tamir_va_negahdari": "تراش و روکش",
+         "last_serious_repair": "1396/7/2",
+         "noeRosazi": "AC",
+         "color": "rgb(255,255,55)",
+         "IRI_color": "rgb(138,218,138)",
+         "transparent": "rgba(0,0,0,0)"
+      },
+      "geometry": {
+         "type": "Polygon",
+         "coordinates": [
+            [
+               [
+                  51.161494,
+                  35.412231
+               ],
+               [
+                  51.161982,
+                  35.412098
+               ],
+               [
+                  51.161735,
+                  35.411525
+               ],
+               [
+                  51.161255,
+                  35.41166
+               ],
+               [
+                  51.161494,
+                  35.412231
+               ]
+            ]
+         ]
+      }
+   },
+   {
+      "type": "Feature",
+      "id": "TC08IK-01",
+      "properties": {
+         "name": "TC08IK-01",
+         "shenaseBand": "TC08IK",
+         "karbari": "تاکسی‏وی",
+         "noeRoye": "آسفالتی",
+         "masahat": "3410",
+         "azmoon_shakhes_nahamvari": "2.92",
+         "azmoon_omq_doroshtbaft": "7.79",
+         "akharin_omq_shiarshodegi": "7.79",
+         "akharin_shakhesh_vaziat": "81.24",
+         "akharin_arzyabi_vaziat": "1398/5/2",
+         "amaliyat_tamir_va_negahdari": "لکه گیری سطحی",
+         "last_serious_repair": "1396/7/2",
+         "noeRosazi": "AC",
+         "color": "rgb(56,170,56)",
+         "IRI_color": "rgb(56,170,56)",
+         "transparent": "rgba(0,0,0,0)"
+      },
+      "geometry": {
+         "type": "Polygon",
+         "coordinates": [
+            [
+               [
+                  51.163527,
+                  35.411666
+               ],
+               [
+                  51.164004,
+                  35.411573
+               ],
+               [
+                  51.16376,
+                  35.410971
+               ],
+               [
+                  51.163281,
+                  35.411093
+               ],
+               [
+                  51.163527,
+                  35.411666
+               ]
+            ]
+         ]
+      }
+   },
+   {
+      "type": "Feature",
+      "id": "TC09IK-01",
+      "properties": {
+         "name": "TC09IK-01",
+         "shenaseBand": "TC09IK",
+         "karbari": "تاکسی‏وی",
+         "noeRoye": "آسفالتی",
+         "masahat": "3410",
+         "azmoon_shakhes_nahamvari": "4.01",
+         "azmoon_omq_doroshtbaft": "6.44",
+         "akharin_omq_shiarshodegi": "6.44",
+         "akharin_shakhesh_vaziat": "76.83",
+         "akharin_arzyabi_vaziat": "1398/5/2",
+         "amaliyat_tamir_va_negahdari": "لکه گیری عمقی",
+         "last_serious_repair": "1396/7/2",
+         "noeRosazi": "AC",
+         "color": "rgb(255,255,55)",
+         "IRI_color": "rgb(56,170,56)",
+         "transparent": "rgba(0,0,0,0)"
+      },
+      "geometry": {
+         "type": "Polygon",
+         "coordinates": [
+            [
+               [
+                  51.164775,
+                  35.411307
+               ],
+               [
+                  51.165237,
+                  35.41119
+               ],
+               [
+                  51.165012,
+                  35.410638
+               ],
+               [
+                  51.164522,
+                  35.41076
+               ],
+               [
+                  51.164775,
+                  35.411307
+               ]
+            ]
+         ]
+      }
+   },
+   {
+      "type": "Feature",
+      "id": "TD01IK-01",
+      "properties": {
+         "name": "TD01IK-01",
+         "shenaseBand": "TD01IK",
+         "karbari": "تاکسی‏وی",
+         "noeRoye": "آسفالتی",
+         "masahat": "2930",
+         "azmoon_shakhes_nahamvari": "3.43",
+         "azmoon_omq_doroshtbaft": "7.38",
+         "akharin_omq_shiarshodegi": "7.38",
+         "akharin_shakhesh_vaziat": "82.16",
+         "akharin_arzyabi_vaziat": "1398/5/2",
+         "amaliyat_tamir_va_negahdari": "لکه گیری سطحی",
+         "last_serious_repair": "1396/7/2",
+         "noeRosazi": "AC",
+         "color": "rgb(56,170,56)",
+         "IRI_color": "rgb(56,170,56)",
+         "transparent": "rgba(0,0,0,0)"
+      },
+      "geometry": {
+         "type": "Polygon",
+         "coordinates": [
+            [
+               [
+                  51.14724,
+                  35.415128
+               ],
+               [
+                  51.147709,
+                  35.41501
+               ],
+               [
+                  51.147487,
+                  35.414477
+               ],
+               [
+                  51.14702,
+                  35.414606
+               ],
+               [
+                  51.14724,
+                  35.415128
+               ]
+            ]
+         ]
+      }
+   },
+   {
+      "type": "Feature",
+      "id": "TD02IK-01",
+      "properties": {
+         "name": "TD02IK-01",
+         "shenaseBand": "TD02IK",
+         "karbari": "تاکسی‏وی",
+         "noeRoye": "آسفالتی",
+         "masahat": "2930",
+         "azmoon_shakhes_nahamvari": "5.45",
+         "azmoon_omq_doroshtbaft": "9.23",
+         "akharin_omq_shiarshodegi": "9.23",
+         "akharin_shakhesh_vaziat": "56.3",
+         "akharin_arzyabi_vaziat": "1398/5/2",
+         "amaliyat_tamir_va_negahdari": "برچیدن و اجرا",
+         "last_serious_repair": "1396/7/2",
+         "noeRosazi": "AC",
+         "color": "rgb(255,255,55)",
+         "IRI_color": "rgb(138,218,138)",
+         "transparent": "rgba(0,0,0,0)"
+      },
+      "geometry": {
+         "type": "Polygon",
+         "coordinates": [
+            [
+               [
+                  51.151642,
+                  35.413917
+               ],
+               [
+                  51.15213,
+                  35.413777
+               ],
+               [
+                  51.151899,
+                  35.413259
+               ],
+               [
+                  51.151422,
+                  35.413386
+               ],
+               [
+                  51.151642,
+                  35.413917
+               ]
+            ]
+         ]
+      }
+   },
+   {
+      "type": "Feature",
+      "id": "TD03IK-01",
+      "properties": {
+         "name": "TD03IK-01",
+         "shenaseBand": "TD03IK",
+         "karbari": "تاکسی‏وی",
+         "noeRoye": "آسفالتی",
+         "masahat": "2930",
+         "azmoon_shakhes_nahamvari": "3.39",
+         "azmoon_omq_doroshtbaft": "8.54",
+         "akharin_omq_shiarshodegi": "8.54",
+         "akharin_shakhesh_vaziat": "80.28",
+         "akharin_arzyabi_vaziat": "1398/5/2",
+         "amaliyat_tamir_va_negahdari": "لکه گیری سطحی",
+         "last_serious_repair": "1396/7/2",
+         "noeRosazi": "AC",
+         "color": "rgb(56,170,56)",
+         "IRI_color": "rgb(56,170,56)",
+         "transparent": "rgba(0,0,0,0)"
+      },
+      "geometry": {
+         "type": "Polygon",
+         "coordinates": [
+            [
+               [
+                  51.153858,
+                  35.413287
+               ],
+               [
+                  51.154328,
+                  35.413151
+               ],
+               [
+                  51.154118,
+                  35.412636
+               ],
+               [
+                  51.15364,
+                  35.412769
+               ],
+               [
+                  51.153858,
+                  35.413287
+               ]
+            ]
+         ]
+      }
+   },
+   {
+      "type": "Feature",
+      "id": "TD04IK-01",
+      "properties": {
+         "name": "TD04IK-01",
+         "shenaseBand": "TD04IK",
+         "karbari": "تاکسی‏وی",
+         "noeRoye": "آسفالتی",
+         "masahat": "2930",
+         "azmoon_shakhes_nahamvari": "4.82",
+         "azmoon_omq_doroshtbaft": "3.86",
+         "akharin_omq_shiarshodegi": "3.86",
+         "akharin_shakhesh_vaziat": "66.1",
+         "akharin_arzyabi_vaziat": "1398/5/2",
+         "amaliyat_tamir_va_negahdari": "تراش و روکش",
+         "last_serious_repair": "1396/7/2",
+         "noeRosazi": "AC",
+         "color": "rgb(255,255,55)",
+         "IRI_color": "rgb(138,218,138)",
+         "transparent": "rgba(0,0,0,0)"
+      },
+      "geometry": {
+         "type": "Polygon",
+         "coordinates": [
+            [
+               [
+                  51.156047,
+                  35.412686
+               ],
+               [
+                  51.156526,
+                  35.412555
+               ],
+               [
+                  51.156304,
+                  35.412028
+               ],
+               [
+                  51.155825,
+                  35.412162
+               ],
+               [
+                  51.156047,
+                  35.412686
+               ]
+            ]
+         ]
+      }
+   },
+   {
+      "type": "Feature",
+      "id": "TD05IK-01",
+      "properties": {
+         "name": "TD05IK-01",
+         "shenaseBand": "TD05IK",
+         "karbari": "تاکسی‏وی",
+         "noeRoye": "آسفالتی",
+         "masahat": "2930",
+         "azmoon_shakhes_nahamvari": "2.92",
+         "azmoon_omq_doroshtbaft": "9.61",
+         "akharin_omq_shiarshodegi": "9.61",
+         "akharin_shakhesh_vaziat": "90.67",
+         "akharin_arzyabi_vaziat": "1398/5/2",
+         "amaliyat_tamir_va_negahdari": "هیچ اقدامی نشود",
+         "last_serious_repair": "1396/7/2",
+         "noeRosazi": "AC",
+         "color": "rgb(56,170,56)",
+         "IRI_color": "rgb(0,120,0)",
+         "transparent": "rgba(0,0,0,0)"
+      },
+      "geometry": {
+         "type": "Polygon",
+         "coordinates": [
+            [
+               [
+                  51.158568,
+                  35.41198
+               ],
+               [
+                  51.159057,
+                  35.411842
+               ],
+               [
+                  51.158844,
+                  35.411315
+               ],
+               [
+                  51.158352,
+                  35.41145
+               ],
+               [
+                  51.158568,
+                  35.41198
+               ]
+            ]
+         ]
+      }
+   },
+   {
+      "type": "Feature",
+      "id": "TD06IK-01",
+      "properties": {
+         "name": "TD06IK-01",
+         "shenaseBand": "TD06IK",
+         "karbari": "تاکسی‏وی",
+         "noeRoye": "آسفالتی",
+         "masahat": "2930",
+         "azmoon_shakhes_nahamvari": "3.04",
+         "azmoon_omq_doroshtbaft": "8.82",
+         "akharin_omq_shiarshodegi": "8.82",
+         "akharin_shakhesh_vaziat": "79.83",
+         "akharin_arzyabi_vaziat": "1398/5/2",
+         "amaliyat_tamir_va_negahdari": "لکه گیری سطحی",
+         "last_serious_repair": "1396/7/2",
+         "noeRosazi": "AC",
+         "color": "rgb(56,170,56)",
+         "IRI_color": "rgb(56,170,56)",
+         "transparent": "rgba(0,0,0,0)"
+      },
+      "geometry": {
+         "type": "Polygon",
+         "coordinates": [
+            [
+               [
+                  51.161109,
+                  35.411279
+               ],
+               [
+                  51.161569,
+                  35.411144
+               ],
+               [
+                  51.160879,
+                  35.410757
+               ],
+               [
+                  51.158844,
+                  35.411315
+               ],
+               [
+                  51.161109,
+                  35.411279
+               ]
+            ]
+         ]
+      }
+   },
+   {
+      "type": "Feature",
+      "id": "TD07IK-01",
+      "properties": {
+         "name": "TD07IK-01",
+         "shenaseBand": "TD07IK",
+         "karbari": "تاکسی‏وی",
+         "noeRoye": "آسفالتی",
+         "masahat": "7684",
+         "azmoon_shakhes_nahamvari": "5.15",
+         "azmoon_omq_doroshtbaft": "7.25",
+         "akharin_omq_shiarshodegi": "7.25",
+         "akharin_shakhesh_vaziat": "66.51",
+         "akharin_arzyabi_vaziat": "1398/5/2",
+         "amaliyat_tamir_va_negahdari": "تراش و روکش",
+         "last_serious_repair": "1396/7/2",
+         "noeRosazi": "AC",
+         "color": "rgb(255,255,55)",
+         "IRI_color": "rgb(138,218,138)",
+         "transparent": "rgba(0,0,0,0)"
+      },
+      "geometry": {
+         "type": "Polygon",
+         "coordinates": [
+            [
+               [
+                  51.163102,
+                  35.410723
+               ],
+               [
+                  51.163598,
+                  35.410581
+               ],
+               [
+                  51.16305,
+                  35.40925
+               ],
+               [
+                  51.16254,
+                  35.4093
+               ],
+               [
+                  51.163102,
+                  35.410723
+               ]
+            ]
+         ]
+      }
+   },
+   {
+      "type": "Feature",
+      "id": "TD08IK-01",
+      "properties": {
+         "name": "TD08IK-01",
+         "shenaseBand": "TD08IK",
+         "karbari": "تاکسی‏وی",
+         "noeRoye": "آسفالتی",
+         "masahat": "7684",
+         "azmoon_shakhes_nahamvari": "3.98",
+         "azmoon_omq_doroshtbaft": "0.86",
+         "akharin_omq_shiarshodegi": "0.86",
+         "akharin_shakhesh_vaziat": "74.13",
+         "akharin_arzyabi_vaziat": "1398/5/2",
+         "amaliyat_tamir_va_negahdari": "لکه گیری عمقی",
+         "last_serious_repair": "1396/7/2",
+         "noeRosazi": "AC",
+         "color": "rgb(255,255,55)",
+         "IRI_color": "rgb(56,170,56)",
+         "transparent": "rgba(0,0,0,0)"
+      },
+      "geometry": {
+         "type": "Polygon",
+         "coordinates": [
+            [
+               [
+                  51.164416,
+                  35.41039
+               ],
+               [
+                  51.164855,
+                  35.410279
+               ],
+               [
+                  51.164286,
+                  35.408888
+               ],
+               [
+                  51.163817,
+                  35.409034
+               ],
+               [
+                  51.164416,
+                  35.41039
+               ]
+            ]
+         ]
+      }
+   },
+   {
+      "type": "Feature",
+      "id": "TE01IK-01",
+      "properties": {
+         "name": "TE01IK-01",
+         "shenaseBand": "TE01IK",
+         "karbari": "تاکسی‏وی",
+         "noeRoye": "آسفالتی",
+         "masahat": "14811",
+         "azmoon_shakhes_nahamvari": "2.57",
+         "azmoon_omq_doroshtbaft": "9.15",
+         "akharin_omq_shiarshodegi": "9.15",
+         "akharin_shakhesh_vaziat": "93.82",
+         "akharin_arzyabi_vaziat": "1398/5/2",
+         "amaliyat_tamir_va_negahdari": "هیچ اقدامی نشود",
+         "last_serious_repair": "1396/7/2",
+         "noeRosazi": "AC",
+         "color": "rgb(56,170,56)",
+         "IRI_color": "rgb(0,120,0)",
+         "transparent": "rgba(0,0,0,0)"
+      },
+      "geometry": {
+         "type": "Polygon",
+         "coordinates": [
+            [
+               [
+                  51.160893,
+                  35.40975
+               ],
+               [
+                  51.164286,
+                  35.408888
+               ],
+               [
+                  51.164089,
+                  35.40843
+               ],
+               [
+                  51.160727,
+                  35.409365
+               ],
+               [
+                  51.160893,
+                  35.40975
+               ]
+            ]
+         ]
+      }
+   },
+   {
+      "type": "Feature",
+      "id": "AIK-01",
+      "properties": {
+         "name": "AIK-01",
+         "shenaseBand": "AIK",
+         "karbari": "اپرون",
+         "noeRoye": "آسفالتی",
+         "masahat": "239635",
+         "azmoon_shakhes_nahamvari": "4.72",
+         "azmoon_omq_doroshtbaft": "1.92",
+         "akharin_omq_shiarshodegi": "1.92",
+         "akharin_shakhesh_vaziat": "71.13",
+         "akharin_arzyabi_vaziat": "1398/5/2",
+         "amaliyat_tamir_va_negahdari": "لکه گیری عمقی",
+         "last_serious_repair": "1396/7/2",
+         "noeRosazi": "AC",
+         "color": "rgb(255,255,55)",
+         "IRI_color": "rgb(56,170,56)",
+         "transparent": "rgba(0,0,0,0)"
+      },
+      "geometry": {
+         "type": "Polygon",
+         "coordinates": [
+            [
+               [
+                  51.14585,
+                  35.414942
+               ],
+               [
+                  51.161349,
+                  35.410627
+               ],
+               [
+                  51.160891,
+                  35.409542
+               ],
+               [
+                  51.145404,
+                  35.413902
+               ],
+               [
+                  51.14585,
+                  35.414942
+               ]
+            ]
+         ]
+      }
+   },
+   {
+      "type": "Feature",
+      "id": "AIK-02",
+      "properties": {
+         "name": "AIK-02",
+         "shenaseBand": "AIK",
+         "karbari": "اپرون",
+         "noeRoye": "آسفالتی",
+         "masahat": "239635",
+         "azmoon_shakhes_nahamvari": "2.84",
+         "azmoon_omq_doroshtbaft": "6.24",
+         "akharin_omq_shiarshodegi": "6.24",
+         "akharin_shakhesh_vaziat": "86.26",
+         "akharin_arzyabi_vaziat": "1398/5/2",
+         "amaliyat_tamir_va_negahdari": "درزگیری",
+         "last_serious_repair": "1396/7/2",
+         "noeRosazi": "AC",
+         "color": "rgb(56,170,56)",
+         "IRI_color": "rgb(0,120,0)",
+         "transparent": "rgba(0,0,0,0)"
+      },
+      "geometry": {
+         "type": "Polygon",
+         "coordinates": [
+            [
+               [
+                  51.145404,
+                  35.413902
+               ],
+               [
+                  51.160891,
+                  35.409542
+               ],
+               [
+                  51.160466,
+                  35.408524
+               ],
+               [
+                  51.144928,
+                  35.412776
+               ],
+               [
+                  51.145404,
+                  35.413902
+               ]
+            ]
+         ]
+      }
+   }
+
+   ]
+}

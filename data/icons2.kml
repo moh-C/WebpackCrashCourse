@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <Document>
+        <Folder>
+            <Placemark>
+                <name>141</name>
+                <Point>
+                    <coordinates>51.123175,35.423944,0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>142</name>
+                <Point>
+                    <coordinates>51.123280,35.423164,0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>143</name>
+                <Point>
+                    <coordinates>51.125290,35.422964,0</coordinates>
+                </Point>
+            </Placemark>
+        </Folder>
+    </Document>
+</kml>
