@@ -459,7 +459,6 @@ function singlePolySelector(feature) {
   let cString = nameofFeature
     .toString()
     .slice(0, nameofFeature.toString().length - 3);
-  console.log(dropdown, cString);
   firstBranchDesignerCustom(dropdown, cString);
   second_branch.innerHTML = tempTextSecond;
 
