@@ -1,24 +1,889 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Using OpenLayers with Webpack</title>
-    <link rel="stylesheet" href="https://openlayers.org/en/latest/css/ol.css" type="text/css">
-    <style>
-      html, body {
-        margin: 0;
-        height: 100%;
-      }
-      #map {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        width: 100%;
-      }
-    </style>
-  </head>
-  <body>
-    <div id="map"></div>
+<html lang="fa">
+
+<head>
+    <title>سامانه پایش فرودگاه های کشور</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="./favicon.ico" sizes="16x16">
+    <link rel="stylesheet" href="https://openlayers.org/en/v5.3.0/css/ol.css" type="text/css">
+    <!-- The line below is only needed for old environments like Internet Explorer and Android 4.x -->
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList,URL"></script>
+    <script src="./script.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+    <link href="https://cdn.fontcdn.ir/Font/Persian/Shabnam/Shabnam.css" rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body dir="rtl">
+    <div class="preload">
+        <div id="wrap">
+            <div class="container" id="progess">
+                <div class="sphere" id="sphere1"></div>
+                <div class="sphere" id="sphere2"></div>
+                <div class="sphere" id="sphere3"></div>
+                <div class="sphere" id="sphere4"></div>
+                <div class="sphere" id="sphere5"></div>
+                <div class="sphere" id="sphere6"></div>
+                <div class="sphere" id="sphere7"></div>
+                <div class="sphere" id="sphere8"></div>
+                <div class="sphere" id="sphere9"></div>
+                <div class="sphere" id="sphere10"></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        window.addEventListener('load', () => {
+            const preload = document.querySelector('.preload');
+            preload.classList.add('destoyed');
+        })
+    </script>
+    <header class="header">
+        <div class="header__sticky-wrapper header__sticky-wrapper--sticky">
+            <div class="primary-navigation">
+                <div class="primary-navigation__item primary-navigation__item--home-item">
+                    <a class="primary-navigation__item-home-anchor" href="http://airport-final-phase.herokuapp.com/home.html">
+                        <svg class="primary-navigation__house-icon" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+                            <title>Home</title>
+                            <path d="M14.965 7.413h-2.303v6.907H9.21V9.715H5.755v4.605H2.302V7.413H0L7.55 0l7.415 7.413" fill-rule="evenodd"></path>
+                        </svg>
+                    </a>
+                </div>
+                <div class="primary-navigation__content">
+                    <h2 class="primary-navigation__title">سامانه پایش سلامت <br>روسازی فرودگاه های کشور </h2>
+                </div>
+                <!-- End of Primary Navigation Content-->
+                <ul class="primary-navigation__list">
+                    <li class="primary-navigation__item js-primary-navigation-item">
+                        <a class="primary-navigation__item-anchor js-primary-navigation-item-anchor " href="http://airport-final-phase.herokuapp.com/Statewide_Summary/Main.html">
+                            <span>خلاصه مدیریتی</span>
+                        </a>
+                        <div class="primary-navigation__submenu">
+                            <ul class="primary-navigation__submenu-list">
+                                <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
+                                    <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="#">خلاصه مدیریتی انبار 1</a>
+                                </li>
+                                <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
+                                    <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="#">خلاصه مدیریتی انبار 2</a>
+                                </li>
+                                <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
+                                    <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="#">خلاصه مدیریتی انبار 3</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!--Statewide Summary Submenu-->
+                    <li class="primary-navigation__item js-primary-navigation-item">
+                        <a class="primary-navigation__item-anchor js-primary-navigation-item-anchor " href="#">
+                            <span>گزارش ها</span>
+                        </a>
+                        <div class="primary-navigation__submenu">
+                            <ul class="primary-navigation__submenu-list">
+                                <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
+                                    <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="#">گزارش ها 1</a>
+                                </li>
+                                <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
+                                    <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="#">گزارش ها 2</a>
+                                </li>
+                                <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
+                                    <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="#">گزارش ها 3</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!--Airport Details Submenu-->
+                    <li class="primary-navigation__item js-primary-navigation-item">
+                        <a class="primary-navigation__item-anchor js-primary-navigation-item-anchor primary-navigation__item-anchor--on-this-page" href="http://aaron.rf.gd/aaron">
+                            <span>وضعیت روسازی</span>
+                        </a>
+                    </li>
+                    <!--Maintenance Guidelines Submenu-->
+                    <li class="primary-navigation__item js-primary-navigation-item">
+                        <a class="primary-navigation__item-anchor js-primary-navigation-item-anchor " href="http://airport-final-phase.herokuapp.com/Maintenance/Main.html">
+                            <span>دستورالعمل تعمیر و نگهداری</span>
+                        </a>
+                        <div class="primary-navigation__submenu">
+                            <ul class="primary-navigation__submenu-list">
+                                <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
+                                    <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="#">دستورالعمل تعمیر و نگهداری 1</a>
+                                </li>
+                                <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
+                                    <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="#">دستورالعمل تعمیر و نگهداری 2</a>
+                                </li>
+                                <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
+                                    <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="#">دستورالعمل تعمیر و نگهداری 3</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!--Pavement Inspection Submenu-->
+                    <li class="primary-navigation__item js-primary-navigation-item">
+                        <a class="primary-navigation__item-anchor js-primary-navigation-item-anchor " href="http://airport-final-phase.herokuapp.com/Pavement_Inspection/Main.html">
+                            <span>دستورالعمل ارزیابی روسازی</span>
+                        </a>
+                        <div class="primary-navigation__submenu">
+                            <ul class="primary-navigation__submenu-list">
+                                <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
+                                    <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="#">دستورالعمل ارزیابی روسازی 1</a>
+                                </li>
+                                <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
+                                    <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="#">دستورالعمل ارزیابی روسازی 2</a>
+                                </li>
+                                <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
+                                    <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="#">دستورالعمل ارزیابی روسازی 3</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="primary-navigation__item js-primary-navigation-item">
+                        <a class="primary-navigation__item-anchor js-primary-navigation-item-anchor " href="http://airport-final-phase.herokuapp.com/Miscellaneous/Main.html">
+                            <span>متفرقه</span>
+                        </a>
+                        <div class="primary-navigation__submenu">
+                            <ul class="primary-navigation__submenu-list">
+                                <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
+                                    <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="#">متفرقه 1</a>
+                                </li>
+                                <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
+                                    <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="#">متفرقه 2</a>
+                                </li>
+                                <li class="primary-navigation__submenu-item js-primary-navigation-submenu-item">
+                                    <a class="primary-navigation__submenu-item-anchor js-primary-navigation-submenu-item-anchor " href="#">متفرقه 3</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- Miscellaneous Submenu -->
+                </ul>
+            </div>
+            <!--Primary Navigation-->
+        </div>
+        <!--header__sticky-wrapper-->
+    </header>
+    <!-- Header -->
+    <main class="main">
+        <div class="data-view">
+            <div class="data-view-pavement-levels">
+                <div class="data-view-header-text pavement-level-selection-label">
+                    <p>روش نمایش</p>
+                </div>
+                <ul class="pavement-levels-items">
+                    <li class="pavement-level-item">
+                        <input type="radio" name="pavement-level" id="network-radio-id" class="pavement-level-item-input" value="0">
+                        <label for="network-radio-id" class="pavement-level-item-label">
+                            <svg class="pavement-level-label-icon" focusable="false" height="21" viewBox="0 0 21 21" width="21">
+                                <g>
+                                    <path d="M10.55 2L2 10.5l8.55 8.5L19 10.5 10.55 2zm-.7-.7c.38-.4 1.02-.4 1.4 0l8.46 8.5c.4.38.4 1.02 0 1.4l-8.44 8.5c-.4.4-1.03.4-1.42 0L1.3 11.2c-.4-.38-.4-1.02 0-1.4l8.54-8.5z" fill-rule="nonzero"></path>
+                                    <circle cx="18.5" cy="10.5" r="2.5"></circle>
+                                    <circle cx="2.5" cy="10.5" r="2.5"></circle>
+                                    <circle cx="10.5" cy="18.5" r="2.5"></circle>
+                                    <circle cx="10.5" cy="2.5" r="2.5"></circle>
+                                </g>
+                            </svg>
+                            <span class="pavement-level-label-text">فرودگاه</span>
+                        </label>
+                    </li>
+                    <!-- pavement-level-item Network-->
+                    <li class="pavement-level-item">
+                        <input type="radio" name="pavement-level" id="network-Branch-id" class="pavement-level-item-input" value="1">
+                        <label for="network-Branch-id" class="pavement-level-item-label">
+                            <svg class="pavement-level-label-icon" focusable="false" height="21" viewBox="0 0 21 21" width="21">
+                                <g>
+                                    <path d="M18.998 15.207l.71-.705L10.9 5.647c-.194-.195-.51-.196-.706-.002l-8.9 8.853.704.71 8.546-8.5 8.454 8.5z" fill-rule="nonzero"></path>
+                                    <circle cx="18.5" cy="14.5" r="2.5"></circle>
+                                    <circle cx="2.5" cy="14.5" r="2.5"></circle>
+                                    <circle cx="10.5" cy="6.5" r="2.5"></circle>
+                                </g>
+                            </svg>
+                            <span class="pavement-level-label-text">باند</span>
+                        </label>
+                    </li>
+                    <!-- pavement-level-item Branch-->
+                    <li class="pavement-level-item">
+                        <input type="radio" name="pavement-level" id="network-section-id" class="pavement-level-item-input" value="2" checked>
+                        <label for="network-section-id" class="pavement-level-item-label">
+                            <svg class="pavement-level-label-icon" focusable="false" height="21" viewBox="0 0 21 21" width="21">
+                                <g id="level-2">
+                                    <circle cx="6.5" cy="14.5" r="2.5"></circle>
+                                    <circle cx="14.5" cy="6.5" r="2.5"></circle>
+                                    <path d="M15.26 5L5 15.205l.705.71 10.26-10.206" fill-rule="nonzero"></path>
+                                </g>
+                            </svg>
+                            <span class="pavement-level-label-text">قطعه</span>
+                        </label>
+                    </li>
+                    <!-- pavement-level-item Section-->
+                </ul>
+                <!-- pavement-levels-items -->
+            </div>
+            <!-- data-view-pavement-level wrapper -->
+            <div class="data-view-pavement-selection">
+                <div class="data-view-header-text pavement-level-selection-label">
+                    <p>سطح نمایش</p>
+                </div>
+                <ul class="pavement-level-selection-list">
+                    <li class="pavement-level-selection-list-item" id="pavement-level-selection-list-item-network">
+                        <label for="" class="pavement-level-selection-list-label">فرودگاه</label>
+                        <div class="pavement-level-selection-list-item">
+                            <select class="pavement-level-selection-option">
+                                <option value="01">فرودگاه امام خمینی (ره)</option>
+                            </select>
+                        </div>
+                    </li>
+                    <!--Pavement level selection list item Network -->
+                    <li class="pavement-level-selection-list-item" id="pavement-level-selection-list-item-branch">
+                        <label for="" class="pavement-level-selection-list-label">باند</label>
+                        <select class="pavement-level-selection-option" id="first_branch_selection">
+                            <option value="01">پرواز</option>
+                            <option value="02">تاکسی وی</option>
+                            <option value="03">اپرون</option>
+                        </select>
+                    </li>
+                    <!--Pavement level selection list item Branch-->
+                    <li class="pavement-level-selection-list-item" id="pavement-level-selection-list-item-section">
+                        <label for="second_branch_selection" class="pavement-level-selection-list-label">قطعه</label>
+                        <select id="second_branch_selection" class="pavement-level-selection-option">
+                            <option value="01">001</option>
+                        </select>
+                    </li>
+                    <!--Pavement level selection list item Section-->
+                </ul>
+            </div>
+            <div class="selection-tower__details">
+                
+                <!--  //////////////////  -->
+                <quick-details id="quickDetailsOnHover">
+                    <div id="quick-details__section-label">
+                        جزئیات باند
+                    </div>
+                    <div class="quick-details">
+                        <div class="quick-details__info" id="quick-details__info_">
+                            <div id="quick-details__shenaseQate">نام باند</div>
+                        </div>
+                        <div class="quick-details__content">
+                            <div class="quick-details__content-list photos_class_controller">
+                                <div class="quick-details__photo-item">
+                                    <img id="quick-details__content-photo-source" src="" alt="">
+                                </div>
+                            </div>
+
+                            <div class="quick-details__content-list photos_class_controller" id="destructionType">
+                                <div class="quick-details__content-item">
+                                    <span class="quick-details__content-item-name">نوع خرابی</span>
+                                    <span class="quick-details__content-item-value" id="quick-details__content-item-value-destruction_type">نوع</span>
+                                </div>
+                            </div>
+
+                            <div class="quick-details__content-list quick_details_controller">
+                                <div class="quick-details__content-item">
+                                    <span class="quick-details__content-item-name">شناسه باند</span>
+                                    <span class="quick-details__content-item-value" id="quick-details__shenase_band">1567</span>
+                                </div>
+                            </div>
+
+                            <div class="quick-details__content-list quick_details_controller">
+                                <div class="quick-details__content-item">
+                                    <span class="quick-details__content-item-name">کاربری</span>
+                                    <span class="quick-details__content-item-value" id="quick-details__karbari">نوع</span>
+                                </div>
+                            </div>
+
+                            <div class="quick-details__content-list quick_details_controller">
+                                <div class="quick-details__content-item">
+                                    <span class="quick-details__content-item-name">نوع رویه</span>
+                                    <span class="quick-details__content-item-value" id="quick-details__noeRoye">نوع</span>
+                                </div>
+                            </div>
+
+                            <div class="quick-details__content-list quick_details_controller">
+                                <div class="quick-details__content-item">
+                                    <span class="quick-details__content-item-name">نوع روسازی</span>
+                                    <span class="quick-details__content-item-value" id="noeRosazi"></span>
+                                </div>
+                            </div>
+
+                            <div class="quick-details__content-list quick_details_controller">
+                                <div class="quick-details__content-item">
+                                    <span class="quick-details__content-item-name">مساحت</span>
+                                    <span class="quick-details__content-item-value"><span id="quick_details__content_item_area"></span> متر مربع</span>
+                                </div>
+                            </div>
+
+                            <div class="quick-details__content-list quick_details_controller">
+                                <div class="quick-details__content-item">
+                                    <span class="quick-details__content-item-name">آزمون شاخص ناهمواری (IRI)</span>
+                                    <span class="quick-details__content-item-value"><span id="azmoon_shakhes_nahamvari"></span></span>
+                                </div>
+                            </div>
+                            
+                            <div class="quick-details__content-list quick_details_controller">
+                                <div class="quick-details__content-item">
+                                    <span class="quick-details__content-item-name">آزمون عمق درشتبافت (MPD)</span>
+                                    <span class="quick-details__content-item-value"><span id="azmoon_omq_doroshtbaft"></span></span>
+                                </div>
+                            </div>
+
+                            <div class="quick-details__content-list quick_details_controller">
+                                <div class="quick-details__content-item">
+                                    <span class="quick-details__content-item-name">آخرین عمق شیارشدگی</span>
+                                    <span class="quick-details__content-item-value"><span id="akharin_omq_shiarshodegi"></span></span>
+                                </div>
+                            </div>
+
+                            <div class="quick-details__content-list quick_details_controller">
+                                <div class="quick-details__content-item">
+                                    <span class="quick-details__content-item-name">آخرین شاخص وضعیت (PCI)</span>
+                                    <span class="quick-details__content-item-value"><span id="akharin_shakhesh_vaziat"></span></span>
+                                </div>
+                            </div>
+
+                            <div class="quick-details__content-list quick_details_controller">
+                                <div class="quick-details__content-item">
+                                    <span class="quick-details__content-item-name">آخرین ارزیابی وضعیت</span>
+                                    <span class="quick-details__content-item-value"><span id="akharin_arzyabi_vaziat"></span></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="quick-details__content-list quick_details_controller">
+                            <div class="quick-details__content-item">
+                                <span class="quick-details__content-item-name">عملیات تعمیر و نگهداری</span>
+                                <span class="quick-details__content-item-value"><span id="amaliyat_tamir_va_negahdari"></span></span>
+                            </div>
+                        </div>
+
+                        <div class="quick-details__content-list quick_details_controller">
+                            <div class="quick-details__content-item">
+                                <span class="quick-details__content-item-name">آخرین تعمیر و نگهداری اساسی</span>
+                                <span class="quick-details__content-item-value"><span id="last_serious_repair"></span></span>
+                            </div>
+                        </div>
+                    </div>
+                </quick-details>
+                <!--  //////////////////  -->
+                <quick-details id="quickDetailsOnClick">
+                    <div id="quick-details__section-label">
+                        جزئیات باند
+                    </div>
+                    <div class="quick-details">
+                        <div class="quick-details__info" id="quick-details__info_">
+                            <div id="quick-details__shenaseQate_clicked">نام باند</div>
+                        </div>
+                        <div class="quick-details__content">
+                            <div class="quick-details__content-list photos_class_controller">
+                                <div class="quick-details__photo-item">
+                                    <img id="quick-details__content-photo-source" src="" alt="">
+                                </div>
+                            </div>
+
+                            <div class="quick-details__content-list photos_class_controller" id="destructionType">
+                                <div class="quick-details__content-item">
+                                    <span class="quick-details__content-item-name">نوع خرابی</span>
+                                    <span class="quick-details__content-item-value" id="quick-details__content-item-value-destruction_type">نوع</span>
+                                </div>
+                            </div>
+
+                            <div class="quick-details__content-list quick_details_controller">
+                                <div class="quick-details__content-item">
+                                    <span class="quick-details__content-item-name">شناسه باند</span>
+                                    <span class="quick-details__content-item-value" id="quick-details__shenase_band_clicked">1567</span>
+                                </div>
+                            </div>
+
+                            <div class="quick-details__content-list quick_details_controller">
+                                <div class="quick-details__content-item">
+                                    <span class="quick-details__content-item-name">کاربری</span>
+                                    <span class="quick-details__content-item-value" id="quick-details__karbari_clicked">نوع</span>
+                                </div>
+                            </div>
+
+                            <div class="quick-details__content-list quick_details_controller">
+                                <div class="quick-details__content-item">
+                                    <span class="quick-details__content-item-name">نوع رویه</span>
+                                    <span class="quick-details__content-item-value" id="quick-details__noeRoye_clicked">نوع</span>
+                                </div>
+                            </div>
+
+                            <div class="quick-details__content-list quick_details_controller">
+                                <div class="quick-details__content-item">
+                                    <span class="quick-details__content-item-name">نوع روسازی</span>
+                                    <span class="quick-details__content-item-value" id="noeRosazi_clicked"></span>
+                                </div>
+                            </div>
+
+                            <div class="quick-details__content-list quick_details_controller">
+                                <div class="quick-details__content-item">
+                                    <span class="quick-details__content-item-name">مساحت</span>
+                                    <span class="quick-details__content-item-value"><span id="quick_details__content_item_area_clicked"></span> متر مربع</span>
+                                </div>
+                            </div>
+
+                            <div class="quick-details__content-list quick_details_controller">
+                                <div class="quick-details__content-item">
+                                    <span class="quick-details__content-item-name">آزمون شاخص ناهمواری (IRI)</span>
+                                    <span class="quick-details__content-item-value"><span id="azmoon_shakhes_nahamvari_clicked"></span></span>
+                                </div>
+                            </div>
+                            
+                            <div class="quick-details__content-list quick_details_controller">
+                                <div class="quick-details__content-item">
+                                    <span class="quick-details__content-item-name">آزمون عمق درشتبافت (MPD)</span>
+                                    <span class="quick-details__content-item-value"><span id="azmoon_omq_doroshtbaft_clicked"></span></span>
+                                </div>
+                            </div>
+
+                            <div class="quick-details__content-list quick_details_controller">
+                                <div class="quick-details__content-item">
+                                    <span class="quick-details__content-item-name">آخرین عمق شیارشدگی</span>
+                                    <span class="quick-details__content-item-value"><span id="akharin_omq_shiarshodegi_clicked"></span></span>
+                                </div>
+                            </div>
+
+                            <div class="quick-details__content-list quick_details_controller">
+                                <div class="quick-details__content-item">
+                                    <span class="quick-details__content-item-name">آخرین شاخص وضعیت (PCI)</span>
+                                    <span class="quick-details__content-item-value"><span id="akharin_shakhesh_vaziat_clicked"></span></span>
+                                </div>
+                            </div>
+
+                            <div class="quick-details__content-list quick_details_controller">
+                                <div class="quick-details__content-item">
+                                    <span class="quick-details__content-item-name">آخرین ارزیابی وضعیت</span>
+                                    <span class="quick-details__content-item-value"><span id="akharin_arzyabi_vaziat_clicked"></span></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="quick-details__content-list quick_details_controller">
+                            <div class="quick-details__content-item">
+                                <span class="quick-details__content-item-name">عملیات تعمیر و نگهداری</span>
+                                <span class="quick-details__content-item-value"><span id="amaliyat_tamir_va_negahdari_clicked"></span></span>
+                            </div>
+                        </div>
+
+                        <div class="quick-details__content-list quick_details_controller">
+                            <div class="quick-details__content-item">
+                                <span class="quick-details__content-item-name">آخرین تعمیر و نگهداری اساسی</span>
+                                <span class="quick-details__content-item-value"><span id="last_serious_repair_clicked"></span></span>
+                            </div>
+                        </div>
+                    </div>
+                </quick-details>
+
+            </div>
+
+        </div>
+        <!-- data-view -->
+        <div class="main-display-container">
+            <div class="network-viewer-title-area">
+                <div class="network-viewer-title-area_text">فرودگاه امام خمینی (ره)</div>
+                <div class="network-layout-view-selector">
+                    <div class="network-layout-view_selector" id="network-layout-view_selector">
+                        <div class="network-layout-view-selector-label">روش نمایش: </div>
+                        <div class="network-layout-view-selector-radioGroup">
+                            <label class="network-view-label" for="network_viewer-map">
+                                <input name="network-viewer_radio-group" type="radio" class="network-view-label-radio" id="justMap" aria-checked="false" value="0" checked>
+                                <div class="network-view-label-text">نقشه</div>
+                            </label>
+                            <label class="network-view-label">
+                                <input name="network-viewer_radio-group" type="radio" class="network-view-label-radio" id="justData" aria-checked="false" value="2">
+                                <div class="network-view-label-text">داده</div>
+                            </label>
+                            <label class="network-view-label" for="network_viewer-split">
+                                <input name="network-viewer_radio-group" type="radio" class="network-view-label-radio" id="split" aria-checked="false" value="1">
+                                <div class="network-view-label-text">هر دو</div>
+                            </label>
+                        </div>
+                        <!--network-layout-view-selector-radioGroup-->
+                    </div>
+                    <!--network-layout-view-selector-->
+                </div>
+                <!--network-layout-view-selector-->
+            </div>
+            <!-- network-area-title-area -->
+            <div class="timeline-container">
+                <div class="map-type-selector">
+                    <label for="maptype">نوع نقشه</label>
+                    <select id="maptype">
+                        <option value="01">نگاه کلی</option>
+                        <option value="02">نوع رویه</option>
+                        <option value="03">شاخص ناهمواری</option>
+                        <option value="04">شاخص درشت بافت</option>
+                        <option value="05">عمق شیارشدگی</option>
+                        <option value="06" selected>شاخص وضعیت</option>
+                        <option value="07">عملیات تعمیر و نگهداری</option>
+                    </select>
+                </div>
+                <div class="year-selection">
+                    <label for="timeline-year">انتخاب سال</label>
+                    <select id="timeline-year">
+                        <option value="1398">1398</option>
+                        <option value="1399">1399</option>
+                    </select>
+                </div>
+            </div>
+
+            <div id="network-viewer__map-and-data-container">
+                <div class="network-viewer__map network-viewer__map--map-only" id="main-map-container-id">
+                    <div class="map--map-view">
+                        <div id="map" class="map">
+                            <div id="info"></div>
+                        </div>
+                        <!-- The Map is going to be added here! OpenLayers -->
+                        <div class="map__legend-and-layers-container">
+                            <div class="map__map-layers">
+                                <map-layers-selector>
+                                    <div class="map-layers-selector">
+                                        <div class="mapLabelDiv">
+                                            <label class="map-layer-selector-item__label map-layer-selector-item__label--selected" id="map-label-checkbox-class">
+                                                <input class="map-layer-selector-item__input" type="checkbox" id="map-label-checkbox-id" checked>
+                                                <div class="map-layer-selector-item__label-text">برچسب قطعات</div>
+                                            </label>
+                                        </div>
+                                        <div>
+                                            <label class="map-layer-selector-item__label map-layer-selector-item__label--selected" id="aerial-imagery-checkbox-class">
+                                                <input class="map-layer-selector-item__input" type="checkbox" id="aerial-imagery-checkbox-id" checked>
+                                                <div class="map-layer-selector-item__label-text">ماهواره</div>
+                                            </label>
+                                        </div>
+                                        <div>
+                                            <label class="map-layer-selector-item__label map-layer-selector-item__label--selected" id="photos-class">
+                                                <input class="map-layer-selector-item__input" type="checkbox" id="photos-id" checked>
+                                                <div class="map-layer-selector-item__label-text">عکس ها</div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </map-layers-selector>
+                            </div>
+                            <!---->
+                            <map-legend class="map__legend" id="map__legend__PCI">
+                                <div class="map-legend map-legend--showing">
+                                    <div class="map-legend__title">
+                                        <div class="map-legend__legend-title-prefix">شرح نقشه:</div>
+                                        <div class="map-legend__legend-title"></div>
+                                    </div>
+                                    <ul class="map-legend__color-list">
+                                        <!---->
+                                        <li class="map-legend__color-list-item map-legend__color-list-item--fixed">
+                                            <div class="map-legend__color-swatch">
+                                                <svg class="map-legend__color-swatch-image" focusable="false" preserveAspectRatio="none" viewBox="0 0 1 1">
+                                                    <rect height="1" width="1" fill="#960000"></rect>
+                                                </svg>
+                                            </div>
+                                            <div class="map-legend__color-label">10 - 0</div>
+                                        </li>
+
+                                        <li class="map-legend__color-list-item map-legend__color-list-item--fixed">
+                                            <div class="map-legend__color-swatch">
+                                                <svg class="map-legend__color-swatch-image" focusable="false" preserveAspectRatio="none" viewBox="0 0 1 1">
+                                                    <rect height="1" width="1" fill="#ff0000"></rect>
+                                                </svg>
+                                            </div>
+                                            <div class="map-legend__color-label">25 - 11</div>
+                                        </li>
+
+                                        <li class="map-legend__color-list-item map-legend__color-list-item--fixed">
+                                            <div class="map-legend__color-swatch">
+                                                <svg class="map-legend__color-swatch-image" focusable="false" preserveAspectRatio="none" viewBox="0 0 1 1">
+                                                    <rect height="1" width="1" fill="#ff7d19"></rect>
+                                                </svg>
+                                            </div>
+                                            <div class="map-legend__color-label">40 - 26</div>
+                                        </li>
+
+                                        <li class="map-legend__color-list-item map-legend__color-list-item--fixed">
+                                            <div class="map-legend__color-swatch">
+                                                <svg class="map-legend__color-swatch-image" focusable="false" preserveAspectRatio="none" viewBox="0 0 1 1">
+                                                    <rect height="1" width="1" fill="#ffff37"></rect>
+                                                </svg>
+                                            </div>
+                                            <div class="map-legend__color-label">55 - 41</div>
+                                        </li>
+
+                                        <li class="map-legend__color-list-item map-legend__color-list-item--fixed">
+                                            <div class="map-legend__color-swatch">
+                                                <svg class="map-legend__color-swatch-image" focusable="false" preserveAspectRatio="none" viewBox="0 0 1 1">
+                                                    <rect height="1" width="1" fill="#8ada8a"></rect>
+                                                </svg>
+                                            </div>
+                                            <div class="map-legend__color-label">70 - 56</div>
+                                        </li>
+
+                                        <li class="map-legend__color-list-item map-legend__color-list-item--fixed">
+                                            <div class="map-legend__color-swatch">
+                                                <svg class="map-legend__color-swatch-image" focusable="false" preserveAspectRatio="none" viewBox="0 0 1 1">
+                                                    <rect height="1" width="1" fill="#38aa38"></rect>
+                                                </svg>
+                                            </div>
+                                            <div class="map-legend__color-label">85 - 71</div>
+                                        </li>
+
+                                        <li class="map-legend__color-list-item map-legend__color-list-item--fixed">
+                                            <div class="map-legend__color-swatch">
+                                                <svg class="map-legend__color-swatch-image" focusable="false" preserveAspectRatio="none" viewBox="0 0 1 1">
+                                                    <rect height="1" width="1" fill="#007800"></rect>
+                                                </svg>
+                                            </div>
+                                            <div class="map-legend__color-label">100 - 86</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </map-legend>
+                            <!--First legend-->
+                            <map-legend class="map__legend" id="map__legend__MPD">
+                                <div class="map-legend map-legend--showing">
+                                    <div class="map-legend__title">
+                                        <div class="map-legend__legend-title-prefix">شرح نقشه:</div>
+                                        <div class="map-legend__legend-title"></div>
+                                    </div>
+                                    <ul class="map-legend__color-list">
+                                        <li class="map-legend__color-list-item map-legend__color-list-item--fixed">
+                                            <div class="map-legend__color-swatch">
+                                                <svg class="map-legend__color-swatch-image" focusable="false" preserveAspectRatio="none" viewBox="0 0 1 1">
+                                                    <rect height="1" width="1" fill="#38aa38"></rect>
+                                                </svg>
+                                            </div>
+                                            <div class="map-legend__color-label">0 - 1</div>
+                                        </li>
+                                        <li class="map-legend__color-list-item map-legend__color-list-item--fixed">
+                                            <div class="map-legend__color-swatch">
+                                                <svg class="map-legend__color-swatch-image" focusable="false" preserveAspectRatio="none" viewBox="0 0 1 1">
+                                                    <rect height="1" width="1" fill="#ffff37"></rect>
+                                                </svg>
+                                            </div>
+                                            <div class="map-legend__color-label">1 - 2</div>
+                                        </li>
+                                        <li class="map-legend__color-list-item map-legend__color-list-item--fixed">
+                                            <div class="map-legend__color-swatch">
+                                                <svg class="map-legend__color-swatch-image" focusable="false" preserveAspectRatio="none" viewBox="0 0 1 1">
+                                                    <rect height="1" width="1" fill="#ff0000"></rect>
+                                                </svg>
+                                            </div>
+                                            <div class="map-legend__color-label"> بیشتر از 2 </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </map-legend>
+
+                            <map-legend class="map__legend" id="map__legend__omqShiar">
+                                <div class="map-legend map-legend--showing">
+                                    <div class="map-legend__title">
+                                        <div class="map-legend__legend-title-prefix">شرح نقشه:</div>
+                                        <div class="map-legend__legend-title"></div>
+                                    </div>
+                                    <ul class="map-legend__color-list">
+                                        <li class="map-legend__color-list-item map-legend__color-list-item--fixed">
+                                            <div class="map-legend__color-swatch">
+                                                <svg class="map-legend__color-swatch-image" focusable="false" preserveAspectRatio="none" viewBox="0 0 1 1">
+                                                    <rect height="1" width="1" fill="#38aa38"></rect>
+                                                </svg>
+                                            </div>
+                                            <div class="map-legend__color-label">0 - 12.5</div>
+                                        </li>
+                                        <li class="map-legend__color-list-item map-legend__color-list-item--fixed">
+                                            <div class="map-legend__color-swatch">
+                                                <svg class="map-legend__color-swatch-image" focusable="false" preserveAspectRatio="none" viewBox="0 0 1 1">
+                                                    <rect height="1" width="1" fill="#ffff37"></rect>
+                                                </svg>
+                                            </div>
+                                            <div class="map-legend__color-label">12.5 - 25</div>
+                                        </li>
+                                        <li class="map-legend__color-list-item map-legend__color-list-item--fixed">
+                                            <div class="map-legend__color-swatch">
+                                                <svg class="map-legend__color-swatch-image" focusable="false" preserveAspectRatio="none" viewBox="0 0 1 1">
+                                                    <rect height="1" width="1" fill="#ff0000"></rect>
+                                                </svg>
+                                            </div>
+                                            <div class="map-legend__color-label"> بیشتر از 25 </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </map-legend>
+                            <!---->
+                            <!---->
+                            <!---->
+                            <map-legend class="map__legend" id="map__legend__IRI">
+                                <div class="map-legend map-legend--showing">
+                                    <div class="map-legend__title">
+                                        <div class="map-legend__legend-title-prefix">شرح نقشه:</div>
+                                        <div class="map-legend__legend-title"></div>
+                                    </div>
+                                    <ul class="map-legend__color-list">
+                                        <li class="map-legend__color-list-item map-legend__color-list-item--fixed">
+                                            <div class="map-legend__color-swatch">
+                                                <svg class="map-legend__color-swatch-image" focusable="false" preserveAspectRatio="none" viewBox="0 0 1 1">
+                                                    <rect height="1" width="1" fill="#007800"></rect>
+                                                </svg>
+                                            </div>
+                                            <div class="map-legend__color-label">0 - 2</div>
+                                        </li>
+                                        <li class="map-legend__color-list-item map-legend__color-list-item--fixed">
+                                            <div class="map-legend__color-swatch">
+                                                <svg class="map-legend__color-swatch-image" focusable="false" preserveAspectRatio="none" viewBox="0 0 1 1">
+                                                    <rect height="1" width="1" fill="#38aa38"></rect>
+                                                </svg>
+                                            </div>
+                                            <div class="map-legend__color-label">2 - 3.5</div>
+                                        </li>
+                                        <!---->
+
+                                        <li class="map-legend__color-list-item map-legend__color-list-item--fixed">
+                                            <div class="map-legend__color-swatch">
+                                                <svg class="map-legend__color-swatch-image" focusable="false" preserveAspectRatio="none" viewBox="0 0 1 1">
+                                                    <rect height="1" width="1" fill="#ffff37"></rect>
+                                                </svg>
+                                            </div>
+                                            <div class="map-legend__color-label">3.5 - 5.5</div>
+                                        </li>
+
+                                        <li class="map-legend__color-list-item map-legend__color-list-item--fixed">
+                                            <div class="map-legend__color-swatch">
+                                                <svg class="map-legend__color-swatch-image" focusable="false" preserveAspectRatio="none" viewBox="0 0 1 1">
+                                                    <rect height="1" width="1" fill="#ff7d19"></rect>
+                                                </svg>
+                                            </div>
+                                            <div class="map-legend__color-label">5.5 - 10</div>
+                                        </li>
+
+                                        <li class="map-legend__color-list-item map-legend__color-list-item--fixed">
+                                            <div class="map-legend__color-swatch">
+                                                <svg class="map-legend__color-swatch-image" focusable="false" preserveAspectRatio="none" viewBox="0 0 1 1">
+                                                    <rect height="1" width="1" fill="#ff0000"></rect>
+                                                </svg>
+                                            </div>
+                                            <div class="map-legend__color-label">بیشتر از 10</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </map-legend>
+
+                            <map-legend class="map__legend" id="map__legend__noRoye">
+                                <div class="map-legend map-legend--showing">
+                                    <div class="map-legend__title">
+                                        <div class="map-legend__legend-title-prefix">شرح نقشه:</div>
+                                        <div class="map-legend__legend-title"></div>
+                                    </div>
+                                    <ul class="map-legend__color-list">
+                                        <!---->
+                                        <li class="map-legend__color-list-item map-legend__color-list-item--fixed">
+                                            <div class="map-legend__color-swatch">
+                                                <svg class="map-legend__color-swatch-image" focusable="false" preserveAspectRatio="none" viewBox="0 0 1 1">
+                                                    <rect height="1" width="1" fill="#0066ff"></rect>
+                                                </svg>
+                                            </div>
+                                            <div class="map-legend__color-label">AC</div>
+                                        </li>
+                                        <li class="map-legend__color-list-item map-legend__color-list-item--fixed">
+                                            <div class="map-legend__color-swatch">
+                                                <svg class="map-legend__color-swatch-image" focusable="false" preserveAspectRatio="none" viewBox="0 0 1 1">
+                                                    <rect height="1" width="1" fill="#38aa38"></rect>
+                                                </svg>
+                                            </div>
+                                            <div class="map-legend__color-label">PCC</div>
+                                        </li>
+                                        <li class="map-legend__color-list-item map-legend__color-list-item--fixed">
+                                            <div class="map-legend__color-swatch">
+                                                <svg class="map-legend__color-swatch-image" focusable="false" preserveAspectRatio="none" viewBox="0 0 1 1">
+                                                    <rect height="1" width="1" fill="#ff0000"></rect>
+                                                </svg>
+                                            </div>
+                                            <div class="map-legend__color-label">AC-PCC</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </map-legend>
+
+                            <map-legend class="map__legend" id="map__legend__action">
+                                <div class="map-legend map-legend--showing">
+                                    <div class="map-legend__title">
+                                        <div class="map-legend__legend-title-prefix">شرح نقشه:</div>
+                                        <div class="map-legend__legend-title"></div>
+                                    </div>
+                                    <ul class="map-legend__color-list">
+                                        <!---->
+                                        <li class="map-legend__color-list-item map-legend__color-list-item--fixed">
+                                            <div class="map-legend__color-swatch">
+                                                <svg class="map-legend__color-swatch-image" focusable="false" preserveAspectRatio="none" viewBox="0 0 1 1">
+                                                    <rect height="1" width="1" fill="#a5a5a5"></rect>
+                                                </svg>
+                                            </div>
+                                            <div class="map-legend__color-label">DON</div>
+                                        </li>
+                                        <li class="map-legend__color-list-item map-legend__color-list-item--fixed">
+                                            <div class="map-legend__color-swatch">
+                                                <svg class="map-legend__color-swatch-image" focusable="false" preserveAspectRatio="none" viewBox="0 0 1 1">
+                                                    <rect height="1" width="1" fill="#007800"></rect>
+                                                </svg>
+                                            </div>
+                                            <div class="map-legend__color-label">CRS</div>
+                                        </li>
+                                        <li class="map-legend__color-list-item map-legend__color-list-item--fixed">
+                                            <div class="map-legend__color-swatch">
+                                                <svg class="map-legend__color-swatch-image" focusable="false" preserveAspectRatio="none" viewBox="0 0 1 1">
+                                                    <rect height="1" width="1" fill="#38aa38"></rect>
+                                                </svg>
+                                            </div>
+                                            <div class="map-legend__color-label">SUP</div>
+                                        </li>
+                                        <li class="map-legend__color-list-item map-legend__color-list-item--fixed">
+                                            <div class="map-legend__color-swatch">
+                                                <svg class="map-legend__color-swatch-image" focusable="false" preserveAspectRatio="none" viewBox="0 0 1 1">
+                                                    <rect height="1" width="1" fill="#ffff37"></rect>
+                                                </svg>
+                                            </div>
+                                            <div class="map-legend__color-label">DPP</div>
+                                        </li>
+                                        <li class="map-legend__color-list-item map-legend__color-list-item--fixed">
+                                            <div class="map-legend__color-swatch">
+                                                <svg class="map-legend__color-swatch-image" focusable="false" preserveAspectRatio="none" viewBox="0 0 1 1">
+                                                    <rect height="1" width="1" fill="#ff7d19"></rect>
+                                                </svg>
+                                            </div>
+                                            <div class="map-legend__color-label">MIR</div>
+                                        </li>
+                                        <li class="map-legend__color-list-item map-legend__color-list-item--fixed">
+                                            <div class="map-legend__color-swatch">
+                                                <svg class="map-legend__color-swatch-image" focusable="false" preserveAspectRatio="none" viewBox="0 0 1 1">
+                                                    <rect height="1" width="1" fill="#ff0000"></rect>
+                                                </svg>
+                                            </div>
+                                            <div class="map-legend__color-label">RCN</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </map-legend>
+
+                        </div>
+                        <!--map__legend-and-layers-container-->
+                    </div>
+                    <!--map--map-view-->
+                </div>
+                <!--network-viewer__map-->
+                <div class="network-viewer__tabs_minimized" id="network_viewer__tabs_id">
+                    <h1 class="main__page-title ">نمودارهای خلاصه PCI در سراسر کشور</h1>
+                    <div class="image-data-panel"></div>
+                    <div id="canvas-container">
+                        <canvas id="myChart" style="margin-top:80px;width: 100%;height:40%"></canvas>
+                    </div>
+                </div>
+            </div>
+            <!--network-viewer__map-and-data-container-->
+        </div>
+        <!-- main display container -->
+    </main>
+    <!-- Main -->
+    <script src="./dropdownDesigner.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.selection-tower__details').hide();
+            $('#quickDetailsOnClick').hide();
+        })
+    </script>
+    <script src="./main_page_chart.js"></script>
     <script src="./bundle.js"></script>
-  </body>
+    <script src="./image_implementing.js"></script>
+</body>
+
 </html>
